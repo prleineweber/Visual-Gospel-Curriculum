@@ -67,3 +67,8 @@ export function isPartStart(week: Week): boolean {
 export function artSrc(n: number): string {
   return `/art/${String(n).padStart(2, "0")}.jpg`;
 }
+
+export function weekFileBase(week: Week): string {
+  const slug = week.word.toLowerCase().replace(/[^a-z0-9]+/g, "");
+  return `week-${String(week.n).padStart(2, "0")}-${slug}`;
+}

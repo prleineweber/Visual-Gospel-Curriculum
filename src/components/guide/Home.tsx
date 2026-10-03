@@ -43,6 +43,12 @@ export function Home() {
             >
               Download the PDF
             </a>
+            <Link
+              to="/resources"
+              className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-5 text-sm font-semibold"
+            >
+              Resources
+            </Link>
             <a
               href="https://visualgospelbook.com/"
               className="inline-flex min-h-11 items-center px-2 text-sm font-semibold underline decoration-line-strong underline-offset-4"

@@ -52,6 +52,40 @@
   display: none;
 }
 
+.slide-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+  container-type: size;
+  background: var(--color-paper);
+}
+
+.slide-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: top left;
+  transform: scale(calc(100cqi / 1920px));
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.deck-stage:fullscreen {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--color-ink);
+}
+
+.deck-stage:fullscreen .slide-frame {
+  width: min(100vw, calc(100vh * 16 / 9));
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

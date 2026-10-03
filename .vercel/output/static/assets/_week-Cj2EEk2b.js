@@ -1,0 +1,1 @@
+import{s as e}from"./link-ByeF3nDZ.js";import{t}from"./Shell-CqB47iYL.js";var n=e();function r(){return(0,n.jsx)(t,{children:(0,n.jsx)(`main`,{className:`mx-auto max-w-xl px-4 py-16`,children:(0,n.jsx)(`h1`,{className:`font-display text-4xl font-semibold`,children:`That slide is not in the deck.`})})})}export{r as notFoundComponent};

@@ -6,7 +6,7 @@ export function Shell({ children }: { children: ReactNode }) {
     <div className="min-h-dvh">
       <header className="no-print sticky top-0 z-30 border-b border-line bg-paper/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 md:px-6">
-          <Link to="/" className="flex min-w-0 items-center gap-3">
+          <Link to="/" aria-label="The Visual Gospel Leader Guide" className="flex min-w-0 items-center gap-3">
             <img
               src="/cover.jpg"
               alt=""
@@ -14,15 +14,21 @@ export function Shell({ children }: { children: ReactNode }) {
               height={1004}
               className="h-11 w-auto border border-line"
             />
-            <span className="min-w-0">
+            <span className="hidden min-w-0 sm:block">
               <p className="text-xs font-semibold tracking-widest text-muted uppercase">The Visual Gospel</p>
               <p className="font-display text-xl leading-none font-semibold">Leader Guide</p>
             </span>
           </Link>
           <nav className="flex shrink-0 items-center gap-2">
             <Link
-              to="/print"
+              to="/resources"
               className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold"
+            >
+              Resources
+            </Link>
+            <Link
+              to="/print"
+              className="hidden min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold sm:inline-flex"
             >
               Print
             </Link>
@@ -31,7 +37,8 @@ export function Shell({ children }: { children: ReactNode }) {
               download
               className="inline-flex min-h-11 items-center rounded-full bg-ink px-3 text-sm font-semibold text-elevated"
             >
-              Download PDF
+              <span className="sm:hidden">PDF</span>
+              <span className="hidden sm:inline">Download PDF</span>
             </a>
           </nav>
         </div>

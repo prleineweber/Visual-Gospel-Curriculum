@@ -11,6 +11,10 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as PrintRouteImport } from './routes/print'
+import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as SlideWeekRouteImport } from './routes/slide/$week'
+import { Route as SlidesIndexRouteImport } from './routes/slides/index'
+import { Route as SlidesWeekRouteImport } from './routes/slides/$week'
 import { Route as WeekWeekRouteImport } from './routes/week/$week'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +27,26 @@ const PrintRoute = PrintRouteImport.update({
   path: '/print',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResourcesRoute = ResourcesRouteImport.update({
+  id: '/resources',
+  path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlideWeekRoute = SlideWeekRouteImport.update({
+  id: '/slide/$week',
+  path: '/slide/$week',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlidesIndexRoute = SlidesIndexRouteImport.update({
+  id: '/slides/',
+  path: '/slides/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlidesWeekRoute = SlidesWeekRouteImport.update({
+  id: '/slides/$week',
+  path: '/slides/$week',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WeekWeekRoute = WeekWeekRouteImport.update({
   id: '/week/$week',
   path: '/week/$week',
@@ -32,31 +56,69 @@ const WeekWeekRoute = WeekWeekRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/print': typeof PrintRoute
+  '/resources': typeof ResourcesRoute
+  '/slide/$week': typeof SlideWeekRoute
+  '/slides/$week': typeof SlidesWeekRoute
   '/week/$week': typeof WeekWeekRoute
+  '/slides/': typeof SlidesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/print': typeof PrintRoute
+  '/resources': typeof ResourcesRoute
+  '/slide/$week': typeof SlideWeekRoute
+  '/slides/$week': typeof SlidesWeekRoute
   '/week/$week': typeof WeekWeekRoute
+  '/slides': typeof SlidesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/print': typeof PrintRoute
+  '/resources': typeof ResourcesRoute
+  '/slide/$week': typeof SlideWeekRoute
+  '/slides/$week': typeof SlidesWeekRoute
   '/week/$week': typeof WeekWeekRoute
+  '/slides/': typeof SlidesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/print' | '/week/$week'
+  fullPaths:
+    | '/'
+    | '/print'
+    | '/resources'
+    | '/slide/$week'
+    | '/slides/$week'
+    | '/week/$week'
+    | '/slides/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/print' | '/week/$week'
-  id: '__root__' | '/' | '/print' | '/week/$week'
+  to:
+    | '/'
+    | '/print'
+    | '/resources'
+    | '/slide/$week'
+    | '/slides/$week'
+    | '/week/$week'
+    | '/slides'
+  id:
+    | '__root__'
+    | '/'
+    | '/print'
+    | '/resources'
+    | '/slide/$week'
+    | '/slides/$week'
+    | '/week/$week'
+    | '/slides/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   PrintRoute: typeof PrintRoute
+  ResourcesRoute: typeof ResourcesRoute
+  SlideWeekRoute: typeof SlideWeekRoute
+  SlidesWeekRoute: typeof SlidesWeekRoute
   WeekWeekRoute: typeof WeekWeekRoute
+  SlidesIndexRoute: typeof SlidesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,6 +137,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrintRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
+      preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slide/$week': {
+      id: '/slide/$week'
+      path: '/slide/$week'
+      fullPath: '/slide/$week'
+      preLoaderRoute: typeof SlideWeekRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slides/': {
+      id: '/slides/'
+      path: '/slides'
+      fullPath: '/slides/'
+      preLoaderRoute: typeof SlidesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/slides/$week': {
+      id: '/slides/$week'
+      path: '/slides/$week'
+      fullPath: '/slides/$week'
+      preLoaderRoute: typeof SlidesWeekRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/week/$week': {
       id: '/week/$week'
       path: '/week/$week'
@@ -88,7 +178,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   PrintRoute: PrintRoute,
+  ResourcesRoute: ResourcesRoute,
+  SlideWeekRoute: SlideWeekRoute,
+  SlidesWeekRoute: SlidesWeekRoute,
   WeekWeekRoute: WeekWeekRoute,
+  SlidesIndexRoute: SlidesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
