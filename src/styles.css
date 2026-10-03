@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import "@fontsource/figtree/latin-400.css";
+@import "@fontsource/figtree/latin-500.css";
+@import "@fontsource/figtree/latin-600.css";
+@import "@fontsource/figtree/latin-700.css";
+@import "@fontsource/fraunces/latin-400.css";
+@import "@fontsource/fraunces/latin-400-italic.css";
+@import "@fontsource/fraunces/latin-600.css";
+@import "@fontsource/fraunces/latin-700.css";
+
+@theme {
+  --font-sans: "Figtree", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, serif;
+  --color-paper: #f4f1e8;
+  --color-elevated: #fbf9f4;
+  --color-subtle: #e3e7ea;
+  --color-ink: #0d1d34;
+  --color-muted: #5a6573;
+  --color-faint: #7d8794;
+  --color-line: #0d1d3424;
+  --color-line-strong: #0d1d343d;
+  --radius-card: 0.75rem;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-paper);
+    color: var(--color-ink);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: #0d1d34;
+    color: #f6f4ed;
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+.hide-notes .leader-only {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0.62in 0.68in 0.72in;
+    @bottom-left {
+      content: "The Visual Gospel  ·  Leader Guide";
+      font-family: "Figtree", sans-serif;
+      font-size: 9px;
+      color: #5a6573;
+    }
+    @bottom-right {
+      content: counter(page);
+      font-family: "Figtree", sans-serif;
+      font-size: 9px;
+      color: #5a6573;
+    }
+  }
+  html,
+  body {
+    background: white !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-keep {
+    break-inside: avoid;
+  }
+  .print-break {
+    break-before: page;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

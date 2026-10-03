@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "The Visual Gospel — Leader Guide",
+      "hasCanvas": false,
+      "bodyTextLen": 6230,
+      "bodyTextHash": "b49fa9138ce00a251c709e374f4bd4a277444e9a8c46f4075f86730cd24ba54d",
+      "bodyTextPrefix": "THE VISUAL GOSPEL Leader Guide Print Download PDF FREE FOR YOUR ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-desktop.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "The Visual Gospel — Leader Guide",
+      "hasCanvas": false,
+      "bodyTextLen": 5809,
+      "bodyTextHash": "39e9dd3eac77c0ca558905eeb60928138593c44fed1f4eb262a650fe76194f30",
+      "bodyTextPrefix": "THE VISUAL GOSPEL Leader Guide Print Download PDF FREE FOR YOUR ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-desktop-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/home-desktop.json"
+}
