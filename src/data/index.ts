@@ -14,7 +14,7 @@ export const PARTS: Part[] = [
     title: "God’s Heart",
     subtitle: "What God is like, before we make the story about our crisis.",
     weeks: [1, 2, 3, 4],
-    open: "For four weeks, do not start with the problem. Start with God. Creation, love, mercy, and grace are not warm-up acts for the gospel. They are the God of the gospel. If the room wants to rush to the cross, let them feel the wait.",
+    open: "For four weeks, start with God. Creation, love, mercy, and grace are not a warm-up. They are who He is. Do not rush past Him to get to our problem. The cross will mean more if the room knows the God who gave His Son.",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const PARTS: Part[] = [
     title: "Our Problem",
     subtitle: "What went wrong, and why good news is necessary.",
     weeks: [5, 6, 7, 8, 9],
-    open: "The feast only makes sense if we were starving, and worse than starving. These five weeks tell the truth about sin, death, wrath, judgment, and a real guilty verdict. Do not soften them into low self-esteem. Do not leave the room without pointing at Christ.",
+    open: "Good news is only good if the bad news is true. These five weeks name sin, death, wrath, judgment, and a real guilty verdict. Do not shrink them into low self-esteem. Do not end the night without pointing to Christ.",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const PARTS: Part[] = [
     title: "The Spirit’s Role",
     subtitle: "How the gospel gets inside a person and starts to show.",
     weeks: [21, 22, 23, 24, 25, 26, 27],
-    open: "Christ’s work is finished. It is not automatic wallpaper. The Spirit gives life, marks, adopts, delivers, and brings people to faith and repentance, then keeps making them like Jesus. These weeks are about how the news becomes a person.",
+    open: "Christ’s work is finished. It does not land on a person by magic. The Spirit gives life, seals, adopts, and rescues. He brings sinners to faith and repentance, then keeps making them like Jesus. These weeks are about how the gospel gets inside a real person.",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const PARTS: Part[] = [
     title: "Our Future",
     subtitle: "Where the story is going, and why it was never fragile.",
     weeks: [28, 29, 30],
-    open: "Hope, glory, and the choice of God before the world began. We end here not because election is an afterthought, but because after twenty-nine facets the room can finally hear it as assurance instead of as an argument. The Lamb wrote the book. We did not.",
+    open: "Hope, glory, and God’s choice before the world began. We teach election last so the room hears it as comfort, not as a puzzle. God chose a people in Christ. Whoever comes to Jesus, He will never cast out.",
   },
 ];
 

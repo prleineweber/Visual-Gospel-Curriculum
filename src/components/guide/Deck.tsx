@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
-import { weekByNumber, type Week } from "@/data";
+import { weekByNumber, weekFileBase, type Week } from "@/data";
 import { Slide, SLIDE_COUNT, SLIDES } from "./Slide";
 import { cn } from "@/lib/cn";
 
@@ -10,6 +10,7 @@ export function Deck({ week, slide }: { week: Week; slide: number }) {
   const prevWeek = weekByNumber(week.n - 1);
   const nextWeek = weekByNumber(week.n + 1);
   const s = Math.min(SLIDE_COUNT, Math.max(1, slide));
+  const base = weekFileBase(week);
 
   function go(weekN: number, slideN: number) {
     navigate({
@@ -103,6 +104,13 @@ export function Deck({ week, slide }: { week: Week; slide: number }) {
         >
           Present
         </button>
+        <a
+          href={`/decks/${base}.zip`}
+          download
+          className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-4 text-sm font-semibold"
+        >
+          Download slide deck
+        </a>
         {prevWeek && (
           <button
             type="button"

@@ -17,13 +17,13 @@ export function Resources() {
       </p>
 
       <div className="mt-8 grid gap-4 md:grid-cols-2">
-        <section className="flex gap-4 rounded-card border border-line bg-elevated p-4 md:p-5">
+        <section className="flex flex-col items-start gap-4 rounded-card border border-line bg-elevated p-4 sm:flex-row md:p-5">
           <img
             src="/cover.jpg"
             alt="Cover of The Visual Gospel"
             width={780}
             height={1004}
-            className="w-24 shrink-0 border border-line sm:w-28"
+            className="h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28"
           />
           <div className="min-w-0">
             <h2 className="font-display text-2xl font-semibold">The devotional</h2>
@@ -104,6 +104,13 @@ export function Resources() {
                             >
                               Lesson PDF
                             </a>
+                            <a
+                              href={`/decks/${base}.zip`}
+                              download
+                              className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold"
+                            >
+                              Download slides
+                            </a>
                             <Link
                               to="/slides/$week"
                               params={{ week: String(week.n) }}
@@ -126,9 +133,10 @@ export function Resources() {
       <section className="mt-12">
         <h2 className="font-display text-3xl font-semibold tracking-tight">Slide deck</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          Eight slides for every week. The first is the drawing, the word, and the definition. The second is the
-          drawing and the memory verse, set large enough to read across a room. Then one slide each for the icebreaker,
-          the passage, the discussion, the sentence, the missional challenge, and prayer.
+          Eight slides for every week, large enough for a screen. The first is the drawing, the word, and the
+          definition. The second is the drawing and the memory verse. Then one slide each for the icebreaker, the
+          passage, the discussion, the sentence, the missional challenge, and prayer. Download gives you those slides
+          as images.
         </p>
         <div className="mt-4 max-w-3xl">
           <Slide week={WEEKS[0]} />
@@ -141,6 +149,13 @@ export function Resources() {
           >
             Open the deck
           </Link>
+          <a
+            href="/the-visual-gospel-slide-deck.zip"
+            download
+            className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-5 text-sm font-semibold"
+          >
+            Download all slides
+          </a>
         </div>
       </section>
     </main>

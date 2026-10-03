@@ -248,7 +248,7 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
 
       <section id="pray" className="mt-10 scroll-mt-24">
         <p className="text-xs font-semibold tracking-widest text-muted uppercase">7 · Pray · 8 min</p>
-        <h2 className="font-display mt-1 text-3xl font-semibold">Leave silence between these</h2>
+        <h2 className="font-display mt-1 text-3xl font-semibold">Pray these, and leave room for others</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 leading-relaxed">
           {week.pray.map((line) => (
             <li key={line}>{line}</li>

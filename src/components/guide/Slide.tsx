@@ -54,7 +54,7 @@ function Picture({ week, width }: { week: Week; width: string }) {
       <img
         src={artSrc(week.n)}
         alt={week.alt}
-        className="max-h-[860px] max-w-full border border-line bg-elevated object-contain"
+        className="max-h-[820px] max-w-full border border-line bg-elevated object-contain"
       />
     </div>
   );
@@ -72,7 +72,7 @@ function Split({
   return (
     <div className="flex h-full w-full">
       <Picture week={week} width={width} />
-      <div className="flex min-w-0 flex-1 flex-col py-16 pr-16 pl-6">{children}</div>
+      <div className="flex min-w-0 flex-1 flex-col py-12 pr-14 pl-4">{children}</div>
     </div>
   );
 }
@@ -85,7 +85,7 @@ function Kicker({
   index: number;
 }) {
   return (
-    <p className="text-lg font-semibold tracking-widest text-muted uppercase">
+    <p className="text-xl font-semibold tracking-widest text-muted uppercase">
       {children}
       <span className="float-right tracking-widest">
         {index} / {SLIDE_COUNT}
@@ -97,27 +97,25 @@ function Kicker({
 function WordSlide({ week }: { week: Week }) {
   const part = partOf(week);
   return (
-    <Split week={week} width="w-2/5 px-16">
+    <Split week={week} width="w-[34%] px-10">
       <Kicker index={1}>
         Week {week.n}
         <span className="mx-3">·</span>
         Part {part.roman}
-        <span className="mx-3">·</span>
-        {part.title}
       </Kicker>
       <h1
         className={cn(
-          "font-display mt-6 leading-none font-semibold tracking-tight",
+          "font-display mt-4 leading-none font-semibold tracking-tight",
           week.word.length > 12 ? "text-7xl" : "text-8xl",
         )}
       >
         {week.word}
       </h1>
-      <p className="mt-6 text-2xl leading-snug text-muted">{week.language}</p>
+      <p className="mt-4 text-2xl leading-snug text-muted">{week.language}</p>
       <p
         className={cn(
-          "mt-10 leading-snug",
-          sizeByLength(week.definition, [[180, "text-5xl"], [230, "text-4xl"]], "text-4xl"),
+          "mt-6 leading-snug",
+          sizeByLength(week.definition, [[160, "text-5xl"], [220, "text-4xl"]], "text-4xl"),
         )}
       >
         {week.definition}
@@ -128,46 +126,45 @@ function WordSlide({ week }: { week: Week }) {
 
 function VerseSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-1/3 px-14">
+    <Split week={week} width="w-[28%] px-8">
       <Kicker index={2}>Memory verse · {week.word}</Kicker>
       <p
         className={cn(
-          "font-display mt-8 leading-tight",
-          sizeByLength(week.verse, [[140, "text-7xl"], [180, "text-6xl"], [220, "text-5xl"]], "text-5xl"),
+          "font-display mt-6 leading-tight",
+          sizeByLength(week.verse, [[120, "text-7xl"], [170, "text-6xl"], [210, "text-5xl"]], "text-5xl"),
         )}
       >
         {week.verse}
       </p>
-      <p className="mt-8 text-4xl font-semibold">{week.ref}</p>
+      <p className="mt-6 text-4xl font-semibold">{week.ref}</p>
     </Split>
   );
 }
 
 function IceSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-1/4 px-12">
+    <Split week={week} width="w-[22%] px-8">
       <Kicker index={3}>Icebreaker · {week.word}</Kicker>
       <p
         className={cn(
-          "font-display mt-10 leading-tight",
-          sizeByLength(week.icebreaker, [[110, "text-6xl"], [150, "text-5xl"]], "text-5xl"),
+          "font-display mt-8 leading-tight",
+          sizeByLength(week.icebreaker, [[90, "text-6xl"], [140, "text-5xl"]], "text-5xl"),
         )}
       >
         {week.icebreaker}
       </p>
-      <p className="mt-auto text-2xl text-muted">You can pass.</p>
+      <p className="mt-auto text-3xl text-muted">Short answers. Then open the Bible.</p>
     </Split>
   );
 }
 
 function BibleSlide({ week }: { week: Week }) {
-  const long = week.fromText.some((prompt) => prompt.q.length > 160);
   return (
-    <Split week={week} width="w-1/4 px-12">
+    <Split week={week} width="w-[22%] px-8">
       <Kicker index={4}>Open the Bible · {week.word}</Kicker>
-      <h2 className="font-display mt-6 text-6xl leading-none font-semibold tracking-tight">{week.passageRef}</h2>
-      <p className="mt-4 text-2xl text-muted">Bibles open. Read it aloud.</p>
-      <ol className={cn("mt-8 space-y-6", long ? "text-3xl" : "text-4xl")}>
+      <h2 className="font-display mt-5 text-6xl leading-none font-semibold tracking-tight">{week.passageRef}</h2>
+      <p className="mt-3 text-3xl text-muted">Read it aloud. Ask what it says.</p>
+      <ol className="mt-6 space-y-5 text-4xl">
         {week.fromText.map((prompt, i) => (
           <li key={prompt.q} className="leading-snug">
             <span className="font-display font-semibold">{i + 1}. </span>
@@ -180,11 +177,10 @@ function BibleSlide({ week }: { week: Week }) {
 }
 
 function TalkSlide({ week }: { week: Week }) {
-  const long = week.talk.some((prompt) => prompt.q.length > 180);
   return (
-    <Split week={week} width="w-1/4 px-12">
+    <Split week={week} width="w-[22%] px-8">
       <Kicker index={5}>Around the room · {week.word}</Kicker>
-      <ol className={cn("mt-8 space-y-6", long ? "text-3xl" : "text-4xl")}>
+      <ol className="mt-6 space-y-5 text-4xl">
         {week.talk.map((prompt, i) => (
           <li key={prompt.q} className="leading-snug">
             <span className="font-display font-semibold">{i + 1}. </span>
@@ -208,24 +204,24 @@ function SaySlide({ week }: { week: Week }) {
       >
         {week.say}
       </p>
-      <p className="mt-auto text-2xl text-muted">Two voices. Then say it without looking.</p>
+      <p className="mt-auto text-3xl text-muted">Two voices. Then say it without looking.</p>
     </Split>
   );
 }
 
 function GoSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-1/4 px-12">
+    <Split week={week} width="w-[22%] px-8">
       <Kicker index={7}>Missional challenge · {week.word}</Kicker>
       <p
         className={cn(
-          "mt-8 leading-snug",
-          sizeByLength(week.mission, [[220, "text-4xl"], [270, "text-3xl"]], "text-3xl"),
+          "mt-6 leading-snug",
+          sizeByLength(week.mission, [[180, "text-5xl"], [240, "text-4xl"]], "text-4xl"),
         )}
       >
         {week.mission}
       </p>
-      <p className="mt-auto text-2xl font-semibold">Name someone far from Jesus before you pray.</p>
+      <p className="mt-auto pt-6 text-3xl font-semibold">Name the person. Then tell them the truth.</p>
     </Split>
   );
 }
@@ -234,7 +230,7 @@ function PraySlide({ week }: { week: Week }) {
   return (
     <Split week={week} width="w-1/4 px-12">
       <Kicker index={8}>Pray · {week.word}</Kicker>
-      <ol className="mt-10 space-y-8 text-4xl leading-snug">
+      <ol className="mt-8 space-y-6 text-4xl leading-snug">
         {week.pray.map((line, i) => (
           <li key={line}>
             <span className="font-display font-semibold">{i + 1}. </span>
@@ -242,7 +238,7 @@ function PraySlide({ week }: { week: Week }) {
           </li>
         ))}
       </ol>
-      <p className="mt-auto text-2xl text-muted">Leave silence between these.</p>
+      <p className="mt-auto pt-6 text-3xl text-muted">Pray these out loud. Leave room for others.</p>
     </Split>
   );
 }

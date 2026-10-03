@@ -5,7 +5,7 @@ const MOVES = [
   ["Around the room", "20 min", "Three new questions. Stay curious. Do not reteach the devotion."],
   ["Say it", "5 min", "Two volunteers put the word into one sentence a friend could understand."],
   ["Go", "5 min", "Name someone far from Jesus. Give the week’s challenge: one action, and one true sentence."],
-  ["Pray", "8 min", "Three prompts, and the person just named. Leave silence. Do not reread the book’s prayer."],
+  ["Pray", "8 min", "Three prayers from the text, and the person just named. Leave room for others to pray out loud."],
 ];
 
 export function HowTo({ compact = false }: { compact?: boolean }) {
@@ -15,21 +15,18 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
         <h2 className="font-display text-3xl font-semibold tracking-tight">How to lead the hour</h2>
         <p className="mt-3 max-w-2xl text-base leading-relaxed">
           Plan on 60 to 75 minutes. The book is a 30-day devotion. This guide is 30 gatherings — one word a week.
-          Everyone should already have read that day and sat with its reflection questions. If they have not, still
-          use this guide. Do not switch back to the journal prompts. Those were for the quiet hour. These are for the
-          room.
+          Your people should already have read that day. If they have not, still use this guide. Do not switch back
+          to the journal prompts. Those were for personal reading. This hour is for opening the Bible together and
+          then going to someone who does not know Christ.
         </p>
       </section>
 
       <section>
         <h3 className="font-display text-2xl font-semibold">The shape of a strong hour</h3>
         <p className="mt-3 max-w-2xl leading-relaxed text-muted">
-          The rhythm is borrowed from three guides that already work in real rooms.{" "}
-          <span className="text-ink">The Gospel-Centered Life</span> moves from the text to the heart and will not let
-          application outrun Christ. <span className="text-ink">Knowing the Bible</span> makes a group say what a
-          passage actually says before anyone applies it. <span className="text-ink">Gospel in Life</span> opens with
-          a human question, stays in Scripture, and ends in prayer instead of homework that repeats the reading. This
-          guide assumes the reading is done. The hour is a new passage, a conversation, and a sending.
+          Open the Bible and ask what it says before anyone explains what they feel. The text teaches. Then ask what
+          we must believe, obey, and tell. Christ stays at the center. Application does not outrun Him. The reading
+          is already done. This hour is a new passage, a clear conversation, and a sending.
         </p>
         <ol className="mt-5 grid gap-3 sm:grid-cols-2">
           {MOVES.map(([title, time, body], i) => (
@@ -58,10 +55,10 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
           <section className="max-w-2xl space-y-3 leading-relaxed">
             <h3 className="font-display text-2xl font-semibold">How to ask</h3>
             <p>
-              Ask the question, then wait. Eight seconds feels long and is not long enough. When an answer is fuzzy,
-              ask “Where do you see that in the passage?” instead of giving a speech. If someone answers the journal
-              question from the book, thank them and return to the question in front of you. You are a facilitator.
-              The text teaches.
+              Ask the question, then wait long enough for someone besides you to answer. When an answer is fuzzy,
+              ask “Where do you see that in the passage?” Do not give a speech. If someone repeats the journal
+              question from the book, thank them and come back to the question in front of you. You are not the
+              teacher of a new idea. The text is. Correct a wrong reading of the verse. Do it kindly, and do it.
             </p>
             <p>
               Questions marked <span className="font-semibold text-ink">Core</span> are the ones to keep if you only
@@ -72,8 +69,7 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
           <section className="max-w-2xl space-y-3 leading-relaxed">
             <h3 className="font-display text-2xl font-semibold">The picture and the cards</h3>
             <p>
-              Show the drawing and give the room ten quiet seconds. Then use the short script under the picture if you
-              need words. After that, open{" "}
+              Show the drawing. Then use the short script under the picture if you need words. After that, open{" "}
               <a className="underline decoration-line-strong underline-offset-2" href="https://cards.visualgospelbook.com/">
                 cards.visualgospelbook.com
               </a>
@@ -87,9 +83,9 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
             <h3 className="font-display text-2xl font-semibold">Students, families, and a shorter night</h3>
             <p>
               With students, use the icebreaker, the picture, the verse, the missional challenge, and the line marked
-              for youth in the leader notes. Drop the second “from the passage” question if energy falls. At a family
-              table, read the passage, ask one Core question, name one person to bless, and pray the first prompt.
-              Nobody needs all seven movements to have met with God.
+              for youth in the leader notes. Drop the second “from the passage” question if attention drops. At a
+              family table, read the passage, ask one Core question, name one person far from Jesus, and pray the
+              first prompt. You do not need every movement for the Word to do its work.
             </p>
           </section>
           <section className="max-w-2xl space-y-3 leading-relaxed">
