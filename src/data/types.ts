@@ -28,6 +28,9 @@ export type Week = {
   fromText: [Prompt, Prompt];
   talk: [Prompt, Prompt, Prompt];
   say: string;
+  /** What the group will do, in word and deed, toward someone far from Jesus. */
+  mission: string;
+  missionAim: string;
   pray: [string, string, string];
   watch: string;
   youth: string;

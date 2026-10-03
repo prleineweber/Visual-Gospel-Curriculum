@@ -4,7 +4,8 @@ const MOVES = [
   ["Open the Bible", "15 min", "A passage they did not already journal. Read it aloud. Ask what it says."],
   ["Around the room", "20 min", "Three new questions. Stay curious. Do not reteach the devotion."],
   ["Say it", "5 min", "Two volunteers put the word into one sentence a friend could understand."],
-  ["Pray", "8 min", "Three prompts. Leave silence. Do not reread the book’s prayer."],
+  ["Go", "5 min", "Name someone far from Jesus. Give the week’s challenge: one action, and one true sentence."],
+  ["Pray", "8 min", "Three prompts, and the person just named. Leave silence. Do not reread the book’s prayer."],
 ];
 
 export function HowTo({ compact = false }: { compact?: boolean }) {
@@ -28,7 +29,7 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
           application outrun Christ. <span className="text-ink">Knowing the Bible</span> makes a group say what a
           passage actually says before anyone applies it. <span className="text-ink">Gospel in Life</span> opens with
           a human question, stays in Scripture, and ends in prayer instead of homework that repeats the reading. This
-          guide assumes the reading is done. The hour is a new passage, and a conversation.
+          guide assumes the reading is done. The hour is a new passage, a conversation, and a sending.
         </p>
         <ol className="mt-5 grid gap-3 sm:grid-cols-2">
           {MOVES.map(([title, time, body], i) => (
@@ -65,7 +66,7 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
             <p>
               Questions marked <span className="font-semibold text-ink">Core</span> are the ones to keep if you only
               have 45 minutes: one voice on the icebreaker, the verse said together, the passage read aloud, the Core
-              questions, and a short prayer.
+              questions, the missional challenge, and a short prayer.
             </p>
           </section>
           <section className="max-w-2xl space-y-3 leading-relaxed">
@@ -83,9 +84,10 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
           <section className="max-w-2xl space-y-3 leading-relaxed">
             <h3 className="font-display text-2xl font-semibold">Students, families, and a shorter night</h3>
             <p>
-              With students, use the icebreaker, the picture, the verse, and the line marked for youth in the leader
-              notes. Drop the second “from the passage” question if energy falls. At a family table, read the passage,
-              ask one Core question, and pray the first prompt. Nobody needs all six movements to have met with God.
+              With students, use the icebreaker, the picture, the verse, the missional challenge, and the line marked
+              for youth in the leader notes. Drop the second “from the passage” question if energy falls. At a family
+              table, read the passage, ask one Core question, name one person to bless, and pray the first prompt.
+              Nobody needs all seven movements to have met with God.
             </p>
           </section>
           <section className="max-w-2xl space-y-3 leading-relaxed">

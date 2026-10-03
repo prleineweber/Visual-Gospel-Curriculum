@@ -59,8 +59,8 @@ export function Resources() {
       <section className="mt-12">
         <h2 className="font-display text-3xl font-semibold tracking-tight">Each week</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          The lesson PDF is that week’s gathering, leader notes included. The slide is a 16:9 image: the drawing, the
-          word, the definition, and the memory verse.
+          The lesson PDF is that week’s gathering, leader notes and missional challenge included. The slide is a 16:9
+          image: the drawing, the word, the definition, and the memory verse.
         </p>
         <div className="mt-4 border-t border-line">
           {PARTS.map((part) => {

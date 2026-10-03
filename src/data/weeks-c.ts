@@ -49,6 +49,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Regeneration means the Holy Spirit makes a dead person alive. It is new birth, and it is God’s work.",
+    mission: "Every day this week, pray by name for one person who is spiritually dead, and treat them as someone God can make alive rather than a project who must try harder. Do one life-giving thing — a meal, a walk, a seat with your people. Tell them new birth is the Spirit’s work, not a self-improvement plan.",
+    missionAim: "Get the name in the room and write it down. Next week, ask who they prayed for.",
     pray: [
       "Thank the Spirit for any true life in the room.",
       "Pray for someone who is still only the dead half of the tree.",
@@ -109,6 +111,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Sealing means the Holy Spirit marks believers as God’s own and guarantees He will bring them to the end.",
+    mission: "Be a steady presence for someone whose life is unstable and who is far from Jesus. The same offer, more than once. Tell them that when God saves a person, He marks them as His own and does not get bored and leave.",
+    missionAim: "Consistency is the sermon. Do not tell them they are already sealed if they have not believed.",
     pray: [
       "Thank the Spirit for being both the seal and the guarantee.",
       "Confess a way you have grieved Him as if the mark made obedience optional.",
@@ -169,6 +173,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Adoption means God receives believers as His own children and heirs, through Jesus, because He loves them.",
+    mission: "Make room at a table for someone who does not belong anywhere obvious. Save the seat before they earn it. Tell them adoption means God receives people as His children through Jesus, not after they clean themselves up.",
+    missionAim: "One meal is enough. Welcome them. Do not turn them into a project.",
     pray: [
       "Pray the word Abba slowly. Let it be awkward if it is awkward.",
       "Thank Him that you are not staff in the house.",
@@ -229,6 +235,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Rescue means Jesus delivers people out of the dominion of darkness and brings them into His kingdom.",
+    mission: "Step into a real trouble with someone far from Jesus instead of only commenting on it. Help with something actually over them. Say that Jesus delivers people out of darkness, and that your help is a signpost, not the rescue.",
+    missionAim: "They are not the crisis team. If it is beyond them, help the person get real help, and stay nearby.",
     pray: [
       "Thank Him for coming into the fire.",
       "Pray for someone you would carry to Jesus if you could get them through the roof.",
@@ -287,6 +295,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Faith is trusting Jesus alone to save you — sitting down, and letting Him hold your weight.",
+    mission: "Tell one person what you are trusting Jesus for that you cannot carry yourself. Be specific, not polished. Ask what they are trusting. Then say that faith is sitting down and letting Jesus hold the weight.",
+    missionAim: "The vulnerability is the action. A rehearsed testimony does not count.",
     pray: [
       "Tell God, simply, where you are still holding yourself up.",
       "Thank Him for counting belief as righteousness.",
@@ -346,6 +356,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Repentance is a real turn — mind, heart, and direction — away from sin and toward God, joined to faith in the gospel.",
+    mission: "Turn from one pattern people far from Jesus have watched in you — a temper, gossip, a habit, a way you use people. Tell the person who saw it that you are turning, and that the reason is Jesus. Say that repentance is a real change of mind, heart, and direction, joined to faith in Him.",
+    missionAim: "Help them name the pattern before they leave. “Be nicer” is not a turn.",
     pray: [
       "Thank Jesus for seeking the lost instead of waiting to be found.",
       "Ask for a turn, not only a feeling, where you have been delaying.",
@@ -406,6 +418,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Sanctification means God has already set you apart as His, and He is making you more like Jesus.",
+    mission: "Let someone who does not follow Jesus see you in the middle of being changed. Apologize where you are still rough. Serve where you are growing. Tell them God has already set His people apart, and He is making them like Jesus — His work, and unfinished on purpose.",
+    missionAim: "An honest unfinished place will preach more than a victory story.",
     pray: [
       "Thank God that “holy and beloved” is already how He names His people.",
       "Ask for one piece of the wardrobe — name it — to be put on this week toward a real person.",
@@ -465,6 +479,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Hope is a confident expectation of future good, anchored in God’s promise and in Jesus, who has already gone in.",
+    mission: "Sit with someone who is afraid of what is coming — sickness, money, a child, a death — and do one concrete thing that makes tomorrow lighter. Tell them Christian hope is not a wish. It is confidence that Jesus has already gone ahead, and that God keeps His promises.",
+    missionAim: "Do not correct their grief. Carry something. Then speak.",
     pray: [
       "Thank God that He cannot lie.",
       "Tell Him one groan you are not supposed to pretend away.",
@@ -525,6 +541,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Glorification means that when Jesus appears, God will make every Christian perfectly like Him, body and soul, forever.",
+    mission: "Visit someone the world treats as finished — an older neighbor, a sick friend, a person whose best years look behind them — who does not know Jesus. Help with something physical. Tell them that when Jesus appears, God will make His people whole, body and soul, forever, which is why no one is finished.",
+    missionAim: "The visit is required. A verse in a text is not the challenge.",
     pray: [
       "Thank God that what you will be has not appeared yet, and that He already knows.",
       "Ask Him to make the hope of likeness purify one present habit.",
@@ -585,6 +603,8 @@ export const weeksC: Week[] = [
       },
     ],
     say: "Election is God’s choice, before the world began, to save a people through Jesus, out of love, not because they were better.",
+    mission: "Go to the person you would not have picked — the unlikely one, the resistant one, the one the group stopped mentioning. Pray for them, serve them, and invite them with the welcome of Jesus: whoever comes to Him, He will never cast out.",
+    missionAim: "Do not explain the doctrine of election on the porch. Election is the reason they go to someone they would have skipped. Keep the welcome in their mouth.",
     pray: [
       "Bless the God and Father of our Lord Jesus Christ, in the words of Ephesians 1 if you can.",
       "Thank Him for every word in this study that has become more than a word.",

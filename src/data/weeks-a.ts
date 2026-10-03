@@ -50,6 +50,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "You were made by God and for God, and the gospel is how He remakes what sin broke.",
+    mission: "Notice one person who is easy to overlook — a neighbor, a classmate, a coworker, the same cashier. Treat them as someone God made on purpose. Learn their name if you do not have it, and tell them one true thing: they were made by God, and for God.",
+    missionAim: "The action is dignity. The sentence is about the Maker, not a debate about origins. A name and a kindness still counts if the sentence does not land.",
     pray: [
       "Thank God as Maker — of the room you are in, and of the people in it.",
       "Confess the ways we treat ourselves as the center of the story.",
@@ -110,6 +112,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "God’s love is God giving Himself for our good, and the clearest place we see it is Jesus on the cross.",
+    mission: "Love one person far from Jesus in a way that costs you something specific this week — a meal, a ride, an hour, a bill. If they ask why, say that God’s love is not a mood. It is God giving His Son for people who were not lovely.",
+    missionAim: "Do not let the room pick someone already in the church. Press for a name.",
     pray: [
       "Praise God for a love that does not wait for us to be worth it.",
       "Name, silently, someone you have loved only when they were easy.",
@@ -170,6 +174,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "Mercy is God not giving us the judgment we had earned, and giving us life instead.",
+    mission: "Where you would keep score with someone who does not follow Jesus — a sharp reply, a cold shoulder, a story told to their disadvantage — withhold it. Then tell them that mercy is God not giving us the judgment we had earned, because of Jesus.",
+    missionAim: "Mercy is not pretending a wrong never happened. It is refusing to be the one who finishes them.",
     pray: [
       "Thank God that your group is not outside His mercy.",
       "Confess Jonah’s instinct: mercy for me, payback for them.",
@@ -230,6 +236,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "Grace is God giving sinners the opposite of what they deserve, at Jesus’ cost, as a gift.",
+    mission: "Give something good to someone who cannot pay you back and does not share your faith. Say it is a gift, not a trade. If the door opens, tell them grace is God giving sinners the opposite of what they deserve, at Jesus’ cost.",
+    missionAim: "Watch the urge to post it. The gift is for them.",
     pray: [
       "Thank God for a seat you did not earn.",
       "Name one boast you keep wanting to add.",
@@ -289,6 +297,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "Sin is missing God’s mark in what we do, what we want, and what we fail to do.",
+    mission: "Ask a friend far from Jesus what they think is wrong with the world, and listen. Then own one place you miss God’s mark — something true, not a cute one — and say that sin is missing that mark in what we do, want, and leave undone, and that Jesus came for sinners.",
+    missionAim: "Your confession keeps this from sounding like an attack on them.",
     pray: [
       "Ask God to show the group the real target, not a softer one.",
       "Confess, in silence, one miss you have renamed as a personality trait.",
@@ -349,6 +359,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "Apart from Jesus we are not weak swimmers. We are dead, and only God can make us alive.",
+    mission: "Do not try to fix someone far from Jesus this week. Help them in a way that does not require them to improve first. Tell them we are not people who need a little advice. We need God to make the dead alive, and that is what He does in Jesus.",
+    missionAim: "This protects the group from savior projects. Presence and an honest sentence are the assignment.",
     pray: [
       "Thank God for any spiritual breath in the room. It did not come from the bones.",
       "Pray by name, if people are willing, for someone who seems dry.",
@@ -409,6 +421,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "God’s wrath is His holy love refusing to make peace with evil.",
+    mission: "When a wrong near you hurts someone, do not laugh it off and do not pile on from a distance. Stand with the person who was harmed in a concrete way. Tell someone who trusts you that God’s wrath is holy love refusing to make peace with evil, and that Jesus stood under it for sinners.",
+    missionAim: "Keep this off political speeches. If the room wants a villain, bring them back to the cross.",
     pray: [
       "Praise God that He is not indifferent to evil.",
       "Confess any place you have enjoyed the idea of someone else under the storm.",
@@ -469,6 +483,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "A real Judge is coming. His standard is His own righteousness, not our excuses.",
+    mission: "Tell the truth in a place you usually hedge — a fair word for someone being misjudged, or an apology you owe. Then tell one person far from Jesus that a real Judge is coming, and that you are not trusting your excuses. You are trusting Jesus.",
+    missionAim: "Judgment is not a weapon they get to swing. They stand under it too. Say that if anyone sounds pleased.",
     pray: [
       "Thank God that the empty chair means there is still time.",
       "Pray for someone who is living as if the bench were a myth.",
@@ -529,6 +545,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "Condemnation is the guilty verdict. In Christ, that verdict is not ours to carry.",
+    mission: "Find someone living under a verdict — shame, a failure people still mention, a label they cannot shake. Do one thing that treats them as more than that verdict. Tell them condemnation is a real guilty verdict, and that Jesus bore it so it would not be the last word.",
+    missionAim: "Do not tell them they are already safe if they have not trusted Christ. Offer Christ.",
     pray: [
       "Thank Christ for becoming the curse.",
       "Pray for someone still inside John 3:18’s second half.",
@@ -589,6 +607,8 @@ export const weeksA: Week[] = [
       },
     ],
     say: "God the Son took on a real human life so He could live, die, and rise for us.",
+    mission: "Go where someone far from Jesus actually is — a porch, a shift, a game, a kitchen — instead of only inviting them into yours. Show up. While you are there, say that God did not shout the gospel from a distance. The Son took on a real human life.",
+    missionAim: "A text does not finish this. Presence is the challenge.",
     pray: [
       "Worship Jesus as God and as brother.",
       "Bring Him a temptation someone in the room is actually facing. Ask for the help Hebrews 2:18 promises.",

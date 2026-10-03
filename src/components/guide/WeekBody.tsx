@@ -11,6 +11,7 @@ const STEPS = [
   ["bible", "Open the Bible", "15 min"],
   ["talk", "Around the room", "20 min"],
   ["say", "Say it", "5 min"],
+  ["go", "Go", "5 min"],
   ["pray", "Pray", "8 min"],
 ] as const;
 
@@ -146,6 +147,7 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
           <li>Read Day {week.n}, {week.word}, in The Visual Gospel. Do not reteach the essay.</li>
           <li>Read {week.passageRef} in your Bible. The excerpt below is only a backup.</li>
           <li>Your people should already have answered the day’s reflection questions. Do not ask those again.</li>
+          <li>Leave with a name. The missional challenge only works if someone is named before you pray.</li>
         </ul>
       </section>
 
@@ -223,8 +225,22 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
         </p>
       </section>
 
+      <section id="go" className="mt-10 scroll-mt-24 rounded-card border border-ink px-4 py-5 md:px-5">
+        <p className="text-xs font-semibold tracking-widest text-muted uppercase">6 · This week · 5 min</p>
+        <h2 className="font-display mt-1 text-3xl font-semibold">Missional challenge</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted">
+          Before next week, carry this word to someone far from Jesus — a neighbor, a classmate, a coworker, a friend.
+          Do it with a real action and with a true sentence. Name the person before you pray.
+        </p>
+        <p className="mt-4 text-lg leading-relaxed">{week.mission}</p>
+        <Aim>
+          {week.missionAim} Next week, before the icebreaker, take one minute. Who went, and what happened? One sentence.
+          No speeches.
+        </Aim>
+      </section>
+
       <section id="pray" className="mt-10 scroll-mt-24">
-        <p className="text-xs font-semibold tracking-widest text-muted uppercase">6 · Pray · 8 min</p>
+        <p className="text-xs font-semibold tracking-widest text-muted uppercase">7 · Pray · 8 min</p>
         <h2 className="font-display mt-1 text-3xl font-semibold">Leave silence between these</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 leading-relaxed">
           {week.pray.map((line) => (

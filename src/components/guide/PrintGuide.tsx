@@ -70,7 +70,8 @@ export function PrintGuide({ only }: { only?: number }) {
               The Visual Gospel Leader Guide is a free companion to The Visual Gospel by Philip Leineweber (ISBN
               979-8-1943079-3-7). Definitions and memory verses are taken from the book. The icebreakers, passages, and
               discussion questions were written for the gathering. They are not the reflection questions, gospel
-              responses, or prayers printed in the devotion. Those belong to the personal reading.
+              responses, or prayers printed in the devotion. Those belong to the personal reading. Each week ends by
+              sending the group to someone far from Jesus, with one action and one true sentence.
             </p>
             <p>
               You may copy, print, and share this guide freely in your church, class, or home. Please do not sell it.

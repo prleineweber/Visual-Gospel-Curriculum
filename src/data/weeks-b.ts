@@ -49,6 +49,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "The gospel is the announcement that Jesus died for sins, was buried, and rose again, and that we must turn and trust Him.",
+    mission: "Tell one person the announcement itself, out loud: Jesus died for sins, was buried, and rose again, and He calls us to turn and trust Him. Lead with His news, not your story. Then do one ordinary kindness that makes you easy to ask later.",
+    missionAim: "Practice the sentence once in the room, using the line they just said, before anyone leaves.",
     pray: [
       "Thank God for news this good.",
       "Ask forgiveness for the times we have made it smaller than Christ.",
@@ -109,6 +111,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Salvation is God rescuing us from sin and judgment through Jesus, not us escaping on our own.",
+    mission: "Ask someone who does not follow Jesus what they are counting on when life falls apart. Listen. Tell them salvation is God rescuing people through Jesus, not us climbing out. Offer one practical help you can actually give — a ride, a meal, a night of childcare — and call it a small picture, not the rescue.",
+    missionAim: "Keep the help smaller than the Savior.",
     pray: [
       "Thank God for a rescue you did not engineer.",
       "Be silent for a few seconds, on purpose, as Exodus 14:14 says.",
@@ -169,6 +173,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Atonement is Jesus, our substitute, covering sin by His sacrifice so we can be brought back to God.",
+    mission: "Pay a cost that belongs to someone else and that they will feel — a meal, a fee, a shift, a mess you did not make — for a person far from Jesus. Tell them Jesus covered sin by standing in our place, and that your payment is only a shadow of His.",
+    missionAim: "Do the thing, say the sentence, and do not make them perform gratitude.",
     pray: [
       "Thank the Lamb who was slain.",
       "Confess one way you try to cover yourself.",
@@ -228,6 +234,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Propitiation means Jesus took the wrath we deserved, so God can be both just and the One who justifies.",
+    mission: "Where anger sits between you and someone far from God, move toward peace without pretending the wrong was nothing. Say that God does not ignore evil, and that Jesus took the wrath sinners deserved so God could be just and still welcome sinners.",
+    missionAim: "If the relationship is unsafe, they should not go. Peacemaking is not returning to harm. Help them choose a wise person and a wise place.",
     pray: [
       "Thank the Father for putting His Son forward.",
       "Thank the Son for standing in the storm.",
@@ -287,6 +295,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Justification means God declares sinners righteous as a gift, because of Jesus, received by faith.",
+    mission: "Speak up for someone who is being summed up by their worst day, especially if they do not share your faith. Refuse the reduction. Then tell them God does not grade sinners up. He declares sinners righteous as a gift, because of Jesus, received by faith.",
+    missionAim: "The action is advocacy. The sentence has to stay a gift. Do not let it become “God knows your heart is basically good.”",
     pray: [
       "Thank God for a verdict you did not earn.",
       "Hand Him one false righteousness you keep carrying into court.",
@@ -347,6 +357,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Jesus is the one Mediator. He brings us to God by His death, and He still prays for us.",
+    mission: "Stand in a gap for someone who has no one to speak for them — a meeting, a bill, a form, a hard conversation. Do the work. Tell them there is one Mediator between God and people, the man Christ Jesus, and He brings us to God by His death.",
+    missionAim: "Say out loud that they are not the mediator, if anyone starts to feel heroic.",
     pray: [
       "Thank Jesus for a bridge that is a Person.",
       "Draw near out loud for one specific need. Do it through Him, not around Him.",
@@ -406,6 +418,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Redemption means Jesus paid with His blood to free us from slavery to sin and bring us back to God.",
+    mission: "Help loosen a real bind on someone far from Jesus — a bill you can relieve, a ride so they are not stuck, an afternoon so they are not crushed alone. Tell them redemption means Jesus paid with His blood to free people from slavery to sin.",
+    missionAim: "Do not promise a financial miracle the group cannot keep. Name a freedom that is real and small.",
     pray: [
       "Thank Christ for a price silver could not touch.",
       "Name a futile way you want to stop obeying.",
@@ -466,6 +480,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Reconciliation means God ended the war our sin started, through the blood of the cross, and brought us near.",
+    mission: "Take one step toward a person you are distant from who does not follow Jesus. A message, a table, an apology if you owe one. Tell them God ended the war our sin started, through the blood of the cross, and He brings enemies near.",
+    missionAim: "If the other person is unsafe, truth from a distance is enough. Do not force a reunion.",
     pray: [
       "Thank Christ, who is our peace.",
       "Confess a wall you have maintained.",
@@ -525,6 +541,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "Forgiveness means God cancels our debt of sin in Christ and does not hold it against us.",
+    mission: "Cancel a real debt you have been keeping — a grudge, a story you retell, a payment you loved holding — toward someone outside the church. Tell them you are letting it go because God cancels the debt of sin in Christ. Invite them to the same Jesus.",
+    missionAim: "Forgiveness is not saying the wound was fine. It is laying down the right to punish. Say that before they leave.",
     pray: [
       "Thank God for a torn record.",
       "Confess a sin you keep fishing out of the sea.",
@@ -585,6 +603,8 @@ export const weeksB: Week[] = [
       },
     ],
     say: "A covenant is God binding Himself to His people by promise, and the new covenant stands because Jesus died.",
+    mission: "Keep a promise this week to someone who has been let down, especially if they do not trust Christians. Show up when you said you would. Tell them a covenant is God binding Himself by promise, and the new covenant stands because Jesus died, not because we are reliable.",
+    missionAim: "A vague “I’ll pray” does not count unless they also do the thing they promised.",
     pray: [
       "Praise God for promises that do not depend on our staying awake.",
       "Ask Him to write His ways on a place in you that still bargains.",

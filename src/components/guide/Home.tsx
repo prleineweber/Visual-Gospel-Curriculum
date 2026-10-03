@@ -25,8 +25,8 @@ export function Home() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed">
             A leader guide for The Visual Gospel. Each gathering gives you the word, the book’s definition, the memory
-            verse, an icebreaker, a passage your group has not already journaled, and questions that start a real
-            conversation.
+            verse, an icebreaker, a passage your group has not already journaled, questions that start a real
+            conversation, and a missional challenge — one action and one true sentence for someone far from Jesus.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
