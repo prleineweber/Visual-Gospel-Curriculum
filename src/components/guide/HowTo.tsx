@@ -77,8 +77,10 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
               <a className="underline decoration-line-strong underline-offset-2" href="https://cards.visualgospelbook.com/">
                 cards.visualgospelbook.com
               </a>
-              , find the week’s word, and say the word, the definition, and the verse together once. Review two older
-              cards if you are past week four and the room is willing. Then close it.
+              , find the week’s word, and say the word, the definition, and the verse together once. The slide deck linked
+              at the top of the lesson puts the drawing and definition on the first slide, the memory verse large on
+              the second, then one slide for each movement. Review two older cards if you are past week four and the
+              room is willing. Then close it.
             </p>
           </section>
           <section className="max-w-2xl space-y-3 leading-relaxed">

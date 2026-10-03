@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { PARTS, WEEKS, weekFileBase } from "@/data";
 import { Slide } from "./Slide";
-import { cn } from "@/lib/cn";
 
 const BUY = "https://www.amazon.com/dp/B0HLC7QP8N";
 
@@ -14,7 +13,7 @@ export function Resources() {
       <p className="text-xs font-semibold tracking-widest text-muted uppercase">For the leader</p>
       <h1 className="font-display mt-3 text-5xl leading-none font-semibold tracking-tight md:text-6xl">Resources</h1>
       <p className="mt-5 max-w-2xl text-lg leading-relaxed">
-        The devotional, the full guide, a PDF for each week, and a 16:9 slide you can project.
+        The devotional, the full guide, a PDF for each week, and a slide deck you can project.
       </p>
 
       <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -59,8 +58,8 @@ export function Resources() {
       <section className="mt-12">
         <h2 className="font-display text-3xl font-semibold tracking-tight">Each week</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          The lesson PDF is that week’s gathering, leader notes and missional challenge included. The slide is a 16:9
-          image: the drawing, the word, the definition, and the memory verse.
+          The lesson PDF is that week’s gathering, leader notes and missional challenge included. The slide deck is
+          eight 16:9 slides: the word, a large memory verse, and one slide for each movement of the hour.
         </p>
         <div className="mt-4 border-t border-line">
           {PARTS.map((part) => {
@@ -105,21 +104,12 @@ export function Resources() {
                             >
                               Lesson PDF
                             </a>
-                            <a
-                              href={`/slides/${base}.jpg`}
-                              download
-                              className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold"
-                            >
-                              Slide
-                            </a>
                             <Link
                               to="/slides/$week"
                               params={{ week: String(week.n) }}
-                              className={cn(
-                                "inline-flex min-h-11 items-center px-2 text-sm font-semibold underline decoration-line-strong underline-offset-4",
-                              )}
+                              className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold"
                             >
-                              Open
+                              Slide deck
                             </Link>
                           </span>
                         </li>
@@ -136,7 +126,9 @@ export function Resources() {
       <section className="mt-12">
         <h2 className="font-display text-3xl font-semibold tracking-tight">Slide deck</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          Thirty slides, 16:9, one word each. Present them in the room, or download the images and the deck.
+          Eight slides for every week. The first is the drawing, the word, and the definition. The second is the
+          drawing and the memory verse, set large enough to read across a room. Then one slide each for the icebreaker,
+          the passage, the discussion, the sentence, the missional challenge, and prayer.
         </p>
         <div className="mt-4 max-w-3xl">
           <Slide week={WEEKS[0]} />
@@ -149,13 +141,6 @@ export function Resources() {
           >
             Open the deck
           </Link>
-          <a
-            href="/the-visual-gospel-slides.pdf"
-            download
-            className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-5 text-sm font-semibold"
-          >
-            Download the deck
-          </a>
         </div>
       </section>
     </main>

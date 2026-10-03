@@ -91,6 +91,13 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
               {hideNotes ? "Show leader notes" : "Hide notes to project"}
             </button>
             <Link
+              to="/slides/$week"
+              params={{ week: String(week.n) }}
+              className="inline-flex min-h-11 items-center rounded-full bg-ink px-4 text-sm font-semibold text-elevated"
+            >
+              Slide deck
+            </Link>
+            <Link
               to="/print"
               search={{ week: week.n }}
               className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-4 text-sm font-semibold"
