@@ -13,17 +13,17 @@ export function Resources() {
       <p className="text-xs font-semibold tracking-widest text-muted uppercase">For the leader</p>
       <h1 className="font-display mt-3 text-5xl leading-none font-semibold tracking-tight md:text-6xl">Resources</h1>
       <p className="mt-5 max-w-2xl text-lg leading-relaxed">
-        The devotional, the full guide, a PDF for each week, and a slide deck you can project.
+        The devotional, the flash cards, the full guide, a PDF for each week, and a slide deck you can project.
       </p>
 
-      <div className="mt-8 grid gap-4 md:grid-cols-2">
-        <section className="flex flex-col items-start gap-4 rounded-card border border-line bg-elevated p-4 sm:flex-row md:p-5">
+      <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <section className="flex flex-col items-start gap-4 rounded-card border border-line bg-elevated p-4 sm:flex-row lg:flex-col md:p-5">
           <img
             src="/cover.jpg"
             alt="Cover of The Visual Gospel"
             width={780}
             height={1004}
-            className="h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28"
+            className="h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-36"
           />
           <div className="min-w-0">
             <h2 className="font-display text-2xl font-semibold">The devotional</h2>
@@ -37,6 +37,20 @@ export function Resources() {
               Buy the devotional
             </a>
           </div>
+        </section>
+
+        <section className="flex flex-col rounded-card border border-line bg-elevated p-4 md:p-5">
+          <h2 className="font-display text-2xl font-semibold">The flash cards</h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted">
+            The thirty words, one card at a time: the drawing, the definition, and the memory verse. For class, or to
+            put in someone’s hands.
+          </p>
+          <a
+            href="https://cards.visualgospelbook.com/"
+            className="mt-auto inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold"
+          >
+            Open the flash cards
+          </a>
         </section>
 
         <section className="flex flex-col rounded-card border border-line bg-elevated p-4 md:p-5">

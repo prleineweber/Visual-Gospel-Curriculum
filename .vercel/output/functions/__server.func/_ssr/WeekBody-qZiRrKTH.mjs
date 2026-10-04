@@ -1,7 +1,7 @@
 import { c as cn, d as weekByNumber, l as isPartStart, s as artSrc, u as partOf } from "./Slide-Bg0mTIzY.mjs";
 import { X as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { o as meetingLabel, s as useGuide } from "./router-DdEs_TEJ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-CkUdWvxj.js
+import { o as meetingLabel, s as useGuide } from "./router-CmAKewcQ.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-qZiRrKTH.js
 var import_jsx_runtime = require_jsx_runtime();
 var STEPS = [
 	[
