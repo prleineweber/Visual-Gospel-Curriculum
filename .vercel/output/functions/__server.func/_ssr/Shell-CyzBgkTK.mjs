@@ -1,5 +1,5 @@
 import { S as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/Shell-UQz4vjBr.js
+//#region node_modules/.nitro/vite/services/ssr/assets/Shell-CyzBgkTK.js
 var import_jsx_runtime = require_jsx_runtime();
 function Shell({ children }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -32,6 +32,11 @@ function Shell({ children }) {
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
 						className: "flex shrink-0 items-center gap-2",
 						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								href: "https://visualgospelbook.com/",
+								className: "inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold",
+								children: "Home"
+							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: "/resources",
 								className: "inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold",

@@ -1,6 +1,6 @@
 import { S as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { _ as partOf, c as BOOK, g as isPartStart, h as cn, m as artSrc, o as meetingLabel, s as useGuide, v as weekByNumber } from "./router-C5OjXpej.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-CFfrRWt3.js
+import { _ as partOf, d as BOOK, g as isPartStart, h as cn, m as artSrc, o as meetingLabel, s as useGuide, v as weekByNumber } from "./router-B4JVgVtG.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-C9yRrPz8.js
 var import_jsx_runtime = require_jsx_runtime();
 var STEPS = [
 	[

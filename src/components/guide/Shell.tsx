@@ -20,6 +20,12 @@ export function Shell({ children }: { children: ReactNode }) {
             </span>
           </Link>
           <nav className="flex shrink-0 items-center gap-2">
+            <a
+              href="https://visualgospelbook.com/"
+              className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold"
+            >
+              Home
+            </a>
             <Link
               to="/resources"
               className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-3 text-sm font-semibold"

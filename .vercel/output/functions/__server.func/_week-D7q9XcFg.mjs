@@ -1,6 +1,6 @@
 import { S as require_jsx_runtime } from "./_libs/@tanstack/react-router+[...].mjs";
-import { t as Shell } from "./_ssr/Shell-UQz4vjBr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_week-BXhqCJGk.js
+import { t as Shell } from "./_ssr/Shell-CyzBgkTK.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/_week-D7q9XcFg.js
 var import_jsx_runtime = require_jsx_runtime();
 function Missing() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Shell, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {

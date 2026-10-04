@@ -1,6 +1,6 @@
 import { S as require_jsx_runtime } from "./_libs/@tanstack/react-router+[...].mjs";
-import { d as Slide, i as Route$3 } from "./_ssr/router-C5OjXpej.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_week-BrHiGePM.js
+import { i as Route$3, u as Slide } from "./_ssr/router-B4JVgVtG.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/_week-zbKLsyAU.js
 var import_jsx_runtime = require_jsx_runtime();
 function ExportSlide() {
 	const week = Route$3.useLoaderData();
