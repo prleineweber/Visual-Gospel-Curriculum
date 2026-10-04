@@ -34,7 +34,7 @@ export function Slide({ week, index = 0 }: { week: Week; index?: number }) {
 
   return (
     <div className="slide-frame">
-      <article className="slide-canvas">
+      <article className="slide-canvas" style={{ background: "#0d1d34", color: "#f6f3ec" }}>
         {kind === "word" && <WordSlide week={week} />}
         {kind === "verse" && <VerseSlide week={week} />}
         {kind === "ice" && <IceSlide week={week} />}
@@ -48,123 +48,160 @@ export function Slide({ week, index = 0 }: { week: Week; index?: number }) {
   );
 }
 
-function Picture({ week, width }: { week: Week; width: string }) {
+function Stage({ week }: { week: Week }) {
   return (
-    <div className={cn("flex h-full shrink-0 items-center justify-center", width)}>
+    <div className="relative h-full w-[860px] shrink-0 bg-[#f3efe6]">
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 420px 520px at 20% 16%, rgba(90, 122, 156, 0.45), transparent 70%), radial-gradient(ellipse 300px 240px at 80% 90%, rgba(125, 156, 184, 0.25), transparent 70%)",
+        }}
+      />
       <img
         src={artSrc(week.n)}
         alt={week.alt}
-        className="max-h-[820px] max-w-full border border-line bg-elevated object-contain"
+        className="absolute inset-16 h-[calc(100%-8rem)] w-[calc(100%-8rem)] object-contain mix-blend-multiply"
       />
     </div>
   );
 }
 
-function Split({
+function Pulpit({
   week,
-  width,
+  index,
   children,
+  foot,
 }: {
   week: Week;
-  width: string;
+  index: number;
   children: ReactNode;
+  foot?: ReactNode;
 }) {
   return (
     <div className="flex h-full w-full">
-      <Picture week={week} width={width} />
-      <div className="flex min-w-0 flex-1 flex-col py-12 pr-14 pl-4">{children}</div>
+      <Stage week={week} />
+      <div className="flex min-w-0 flex-1 flex-col px-16 pt-20 pb-12">
+        {children}
+        <div className="mt-auto flex items-end justify-between gap-8 pt-8">
+          <div className="min-w-0 text-[26px] leading-snug text-[#c5d4e4]">{foot}</div>
+          <p className="shrink-0 text-lg font-semibold tracking-widest text-[#c5d4e4]">
+            {index} / {SLIDE_COUNT}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
 
-function Kicker({
-  children,
-  index,
-}: {
-  children: ReactNode;
-  index: number;
-}) {
-  return (
-    <p className="text-xl font-semibold tracking-widest text-muted uppercase">
-      {children}
-      <span className="float-right tracking-widest">
-        {index} / {SLIDE_COUNT}
-      </span>
-    </p>
-  );
+function Kicker({ children }: { children: ReactNode }) {
+  return <p className="text-[22px] font-semibold tracking-[0.22em] text-[#c5d4e4] uppercase">{children}</p>;
+}
+
+function Rule() {
+  return <div className="mt-7 mb-7 h-1 w-20 bg-[#d7e3ef]" />;
 }
 
 function WordSlide({ week }: { week: Week }) {
   const part = partOf(week);
   return (
-    <Split week={week} width="w-[34%] px-10">
-      <Kicker index={1}>
-        Week {week.n}
-        <span className="mx-3">·</span>
-        Part {part.roman}
+    <Pulpit
+      week={week}
+      index={1}
+      foot={week.language}
+    >
+      <Kicker>
+        Week {week.n} · Part {part.roman}
       </Kicker>
       <h1
         className={cn(
           "font-display mt-4 leading-none font-semibold tracking-tight",
-          week.word.length > 12 ? "text-7xl" : "text-8xl",
+          week.word.length > 12 ? "text-[84px]" : week.word.length > 8 ? "text-[108px]" : "text-[128px]",
         )}
       >
         {week.word}
       </h1>
-      <p className="mt-4 text-2xl leading-snug text-muted">{week.language}</p>
+      <Rule />
       <p
         className={cn(
-          "mt-6 leading-snug",
-          sizeByLength(week.definition, [[160, "text-5xl"], [220, "text-4xl"]], "text-4xl"),
+          "leading-snug",
+          sizeByLength(week.definition, [[150, "text-[40px]"], [210, "text-[34px]"]], "text-[30px]"),
         )}
       >
         {week.definition}
       </p>
-    </Split>
+    </Pulpit>
   );
 }
 
 function VerseSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-[28%] px-8">
-      <Kicker index={2}>Memory verse · {week.word}</Kicker>
+    <Pulpit week={week} index={2}>
+      <Kicker>Memory verse · {week.word}</Kicker>
       <p
         className={cn(
-          "font-display mt-6 leading-tight",
-          sizeByLength(week.verse, [[120, "text-7xl"], [170, "text-6xl"], [210, "text-5xl"]], "text-5xl"),
+          "font-display mt-8 leading-tight font-semibold",
+          sizeByLength(week.verse, [[150, "text-[60px]"], [210, "text-[50px]"]], "text-[44px]"),
         )}
       >
         {week.verse}
       </p>
-      <p className="mt-6 text-4xl font-semibold">{week.ref}</p>
-    </Split>
+      <p className="font-display mt-8 text-[34px] text-[#d7e3ef] italic">{week.ref}</p>
+    </Pulpit>
   );
 }
 
 function IceSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-[22%] px-8">
-      <Kicker index={3}>Icebreaker · {week.word}</Kicker>
+    <Pulpit week={week} index={3} foot="Short answers. Then open the Bible.">
+      <Kicker>Icebreaker · {week.word}</Kicker>
       <p
         className={cn(
-          "font-display mt-8 leading-tight",
-          sizeByLength(week.icebreaker, [[90, "text-6xl"], [140, "text-5xl"]], "text-5xl"),
+          "font-display mt-10 leading-tight font-semibold",
+          sizeByLength(week.icebreaker, [[80, "text-[64px]"], [120, "text-[52px]"]], "text-[44px]"),
         )}
       >
         {week.icebreaker}
       </p>
-      <p className="mt-auto text-3xl text-muted">Short answers. Then open the Bible.</p>
-    </Split>
+    </Pulpit>
+  );
+}
+
+function Questions({
+  week,
+  index,
+  kicker,
+  items,
+}: {
+  week: Week;
+  index: number;
+  kicker: string;
+  items: string[];
+}) {
+  const total = items.reduce((sum, item) => sum + item.length, 0);
+  return (
+    <Pulpit week={week} index={index}>
+      <Kicker>
+        {kicker} · {week.word}
+      </Kicker>
+      <ol className={cn("mt-8 space-y-6", total > 520 ? "text-[32px]" : "text-[36px]")}>
+        {items.map((item, i) => (
+          <li key={item} className="leading-snug">
+            <span className="font-display font-semibold">{i + 1}. </span>
+            {item}
+          </li>
+        ))}
+      </ol>
+    </Pulpit>
   );
 }
 
 function BibleSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-[22%] px-8">
-      <Kicker index={4}>Open the Bible · {week.word}</Kicker>
-      <h2 className="font-display mt-5 text-6xl leading-none font-semibold tracking-tight">{week.passageRef}</h2>
-      <p className="mt-3 text-3xl text-muted">Read it aloud. Ask what it says.</p>
-      <ol className="mt-6 space-y-5 text-4xl">
+    <Pulpit week={week} index={4} foot="Read it aloud. Ask what it says.">
+      <Kicker>Open the Bible · {week.word}</Kicker>
+      <h2 className="font-display mt-6 text-[64px] leading-none font-semibold tracking-tight">{week.passageRef}</h2>
+      <ol className="mt-8 space-y-6 text-[34px]">
         {week.fromText.map((prompt, i) => (
           <li key={prompt.q} className="leading-snug">
             <span className="font-display font-semibold">{i + 1}. </span>
@@ -172,65 +209,58 @@ function BibleSlide({ week }: { week: Week }) {
           </li>
         ))}
       </ol>
-    </Split>
+    </Pulpit>
   );
 }
 
 function TalkSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-[22%] px-8">
-      <Kicker index={5}>Around the room · {week.word}</Kicker>
-      <ol className="mt-6 space-y-5 text-4xl">
-        {week.talk.map((prompt, i) => (
-          <li key={prompt.q} className="leading-snug">
-            <span className="font-display font-semibold">{i + 1}. </span>
-            {prompt.q}
-          </li>
-        ))}
-      </ol>
-    </Split>
+    <Questions
+      week={week}
+      index={5}
+      kicker="Around the room"
+      items={week.talk.map((prompt) => prompt.q)}
+    />
   );
 }
 
 function SaySlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-1/3 px-14">
-      <Kicker index={6}>Say it · {week.word}</Kicker>
+    <Pulpit week={week} index={6} foot="Two voices. Then say it without looking.">
+      <Kicker>Say it · {week.word}</Kicker>
       <p
         className={cn(
-          "font-display mt-10 leading-tight",
-          sizeByLength(week.say, [[90, "text-7xl"], [110, "text-6xl"]], "text-5xl"),
+          "font-display mt-10 leading-tight font-semibold",
+          sizeByLength(week.say, [[90, "text-[64px]"], [130, "text-[52px]"]], "text-[44px]"),
         )}
       >
         {week.say}
       </p>
-      <p className="mt-auto text-3xl text-muted">Two voices. Then say it without looking.</p>
-    </Split>
+    </Pulpit>
   );
 }
 
 function GoSlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-[22%] px-8">
-      <Kicker index={7}>Missional challenge · {week.word}</Kicker>
+    <Pulpit week={week} index={7} foot="Name the person. Then tell them the truth.">
+      <Kicker>Missional challenge · {week.word}</Kicker>
       <p
         className={cn(
-          "mt-6 leading-snug",
-          sizeByLength(week.mission, [[180, "text-5xl"], [240, "text-4xl"]], "text-4xl"),
+          "mt-8 leading-snug",
+          sizeByLength(week.mission, [[160, "text-[40px]"], [220, "text-[34px]"]], "text-[30px]"),
         )}
       >
         {week.mission}
       </p>
-      <p className="mt-auto pt-6 text-3xl font-semibold">Name the person. Then tell them the truth.</p>
-    </Split>
+    </Pulpit>
   );
 }
 
 function PraySlide({ week }: { week: Week }) {
   return (
-    <Split week={week} width="w-1/4 px-12">
-      <Kicker index={8}>Pray · {week.word}</Kicker>
-      <ol className="mt-8 space-y-6 text-4xl leading-snug">
+    <Pulpit week={week} index={8} foot="Pray these out loud. Leave room for others.">
+      <Kicker>Pray · {week.word}</Kicker>
+      <ol className="mt-8 space-y-6 text-[34px] leading-snug">
         {week.pray.map((line, i) => (
           <li key={line}>
             <span className="font-display font-semibold">{i + 1}. </span>
@@ -238,7 +268,6 @@ function PraySlide({ week }: { week: Week }) {
           </li>
         ))}
       </ol>
-      <p className="mt-auto pt-6 text-3xl text-muted">Pray these out loud. Leave room for others.</p>
-    </Split>
+    </Pulpit>
   );
 }
