@@ -1,9 +1,9 @@
 import { i as __toESM } from "./_runtime.mjs";
 import { c as cn, d as weekByNumber, f as weekFileBase, n as SLIDE_COUNT, r as Slide, t as SLIDES } from "./_ssr/Slide-Bg0mTIzY.mjs";
 import { X as require_jsx_runtime, Y as require_react, b as useNavigate, y as Link } from "./_libs/@tanstack/react-router+[...].mjs";
-import { r as Route$1 } from "./_ssr/router-CmAKewcQ.mjs";
+import { r as Route$1 } from "./_ssr/router-TAlmKPHY.mjs";
 import { t as Shell } from "./_ssr/Shell-UQz4vjBr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_week-djRBNrKG.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_week-CQA_mulX.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Deck({ week, slide }) {

@@ -2,7 +2,7 @@ import { i as __toESM } from "../_runtime.mjs";
 import { a as PARTS, f as weekFileBase, o as WEEKS, r as Slide } from "./Slide-Bg0mTIzY.mjs";
 import { X as require_jsx_runtime, Y as require_react, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Shell } from "./Shell-UQz4vjBr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/resources-FgXha_Xj.js
+//#region node_modules/.nitro/vite/services/ssr/assets/resources-CTNyJMBC.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var BUY = "https://www.amazon.com/dp/B0HLC7QP8N";
@@ -54,41 +54,59 @@ function Resources() {
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-						className: "flex flex-col rounded-card border border-line bg-elevated p-4 md:p-5",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-								className: "font-display text-2xl font-semibold",
-								children: "The flash cards"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-2 text-sm leading-relaxed text-muted",
-								children: "The thirty words, one card at a time: the drawing, the definition, and the memory verse. For class, or to put in someone’s hands."
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "https://cards.visualgospelbook.com/",
-								className: "mt-auto inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold",
-								children: "Open the flash cards"
-							})
-						]
+						className: "flex flex-col items-start gap-4 rounded-card border border-line bg-elevated p-4 sm:flex-row lg:flex-col md:p-5",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: "/cards-preview.jpg",
+							alt: "A Visual Gospel flash card, Day 1 of 30",
+							width: 860,
+							height: 1120,
+							className: "h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-36"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex min-w-0 flex-1 flex-col",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+									className: "font-display text-2xl font-semibold",
+									children: "The flash cards"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-2 text-sm leading-relaxed text-muted",
+									children: "The thirty words, one card at a time: the drawing, the definition, and the memory verse. For class, or to put in someone’s hands."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									href: "https://cards.visualgospelbook.com/",
+									className: "mt-4 inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold",
+									children: "Open the flash cards"
+								})
+							]
+						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-						className: "flex flex-col rounded-card border border-line bg-elevated p-4 md:p-5",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-								className: "font-display text-2xl font-semibold",
-								children: "The full leader guide"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-2 text-sm leading-relaxed text-muted",
-								children: "All thirty weeks, with leader notes, the cover, and a code to purchase the book. Free to copy for your church. Please do not sell it."
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "/the-visual-gospel-leader-guide.pdf",
-								download: true,
-								className: "mt-auto inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold",
-								children: "Download the full PDF"
-							})
-						]
+						className: "flex flex-col items-start gap-4 rounded-card border border-line bg-elevated p-4 sm:flex-row lg:flex-col md:p-5",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: "/guide-preview.jpg",
+							alt: "First page of The Visual Gospel Leader Guide",
+							width: 1316,
+							height: 946,
+							className: "h-auto w-full max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-full"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "min-w-0",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+									className: "font-display text-2xl font-semibold",
+									children: "The full leader guide"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-2 text-sm leading-relaxed text-muted",
+									children: "All thirty weeks, with leader notes, the cover, and a code to purchase the book. Free to copy for your church. Please do not sell it."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									href: "/the-visual-gospel-leader-guide.pdf",
+									download: true,
+									className: "mt-4 inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold",
+									children: "Download the full PDF"
+								})
+							]
+						})]
 					})
 				]
 			}),

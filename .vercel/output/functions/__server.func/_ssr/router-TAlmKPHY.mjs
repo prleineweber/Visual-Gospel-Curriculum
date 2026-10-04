@@ -4,7 +4,7 @@ import { G as redirect, J as notFound, X as require_jsx_runtime, Y as require_re
 import { t as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
 import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CmAKewcQ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-TAlmKPHY.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -346,7 +346,7 @@ function meetingLabel(start, week) {
 		day: "numeric"
 	});
 }
-var styles_default = "/assets/styles-DE8Wnobo.css";
+var styles_default = "/assets/styles-Brr8KPJJ.css";
 var Route$7 = createRootRoute({
 	head: () => ({
 		meta: [
@@ -403,9 +403,9 @@ function Root() {
 		] })]
 	});
 }
-var $$splitComponentImporter$5 = () => import("./routes-B4A5W7wk.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-Cf6ykxL9.mjs");
 var Route$6 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
-var $$splitComponentImporter$4 = () => import("./print-CsGFy890.mjs");
+var $$splitComponentImporter$4 = () => import("./print-KRhZixTV.mjs");
 var Route$5 = createFileRoute("/print")({
 	validateSearch: (search) => {
 		const raw = Number(search.week);
@@ -415,12 +415,12 @@ var Route$5 = createFileRoute("/print")({
 	head: () => ({ meta: [{ title: "Print — The Visual Gospel Leader Guide" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./resources-FgXha_Xj.mjs");
+var $$splitComponentImporter$3 = () => import("./resources-CTNyJMBC.mjs");
 var Route$4 = createFileRoute("/resources")({
 	head: () => ({ meta: [{ title: "Resources — The Visual Gospel Leader Guide" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("../_week-BXdIDVEQ.mjs");
+var $$splitComponentImporter$2 = () => import("../_week-Dsi7aOQ9.mjs");
 var Route$3 = createFileRoute("/slide/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -441,7 +441,7 @@ var Route$2 = createFileRoute("/slides/")({ beforeLoad: () => {
 	});
 } });
 var $$splitNotFoundComponentImporter$1 = () => import("../_week-BXhqCJGk.mjs");
-var $$splitComponentImporter$1 = () => import("../_week-djRBNrKG.mjs");
+var $$splitComponentImporter$1 = () => import("../_week-CQA_mulX.mjs");
 var Route$1 = createFileRoute("/slides/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -457,7 +457,7 @@ var Route$1 = createFileRoute("/slides/$week")({
 	notFoundComponent: lazyRouteComponent($$splitNotFoundComponentImporter$1, "notFoundComponent")
 });
 var $$splitNotFoundComponentImporter = () => import("../_week-DTBknXsf.mjs");
-var $$splitComponentImporter = () => import("../_week-CVJrFCRv.mjs");
+var $$splitComponentImporter = () => import("../_week-BVi1Yefm.mjs");
 var Route = createFileRoute("/week/$week")({
 	loader: ({ params }) => {
 		const n = Number(params.week);
