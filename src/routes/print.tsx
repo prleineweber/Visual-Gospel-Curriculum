@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PrintGuide } from "@/components/guide/PrintGuide";
+import { pageHead } from "@/lib/seo";
 
 type Search = { week?: number };
 
@@ -9,9 +10,13 @@ export const Route = createFileRoute("/print")({
     if (Number.isInteger(raw) && raw >= 1 && raw <= 30) return { week: raw };
     return {};
   },
-  head: () => ({
-    meta: [{ title: "Print — The Visual Gospel Leader Guide" }],
-  }),
+  head: () =>
+    pageHead({
+      title: "Print — The Visual Gospel Leader Guide",
+      description: "Print a week or the full leader guide.",
+      path: "/print",
+      index: false,
+    }),
   component: PrintPage,
 });
 

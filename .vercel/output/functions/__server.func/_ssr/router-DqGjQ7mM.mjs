@@ -1904,7 +1904,142 @@ function PraySlide({ week }) {
 	});
 }
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Bm125koz.js
+//#region node_modules/.nitro/vite/services/ssr/assets/seo-ZJZogs8r.js
+var SITE = "https://curriculum.visualgospelbook.com";
+var BOOK = "https://visualgospelbook.com/";
+var HOME_DESCRIPTION = "A free 30-week leader guide for The Visual Gospel: the word, a plain definition, a memory verse, and discussion for small groups, classes, and youth.";
+function weekTitle(week) {
+	return `${week.word} — Free Small-Group Lesson | The Visual Gospel`;
+}
+function weekDescription(week) {
+	const lead = week.definition.replace(/\s+/g, " ").trim();
+	const tail = ` Free week ${week.n} lesson for a group, class, or youth group.`;
+	const room = 160 - tail.length;
+	return (lead.length <= room ? lead : `${lead.slice(0, room - 1).replace(/\s+\S*$/, "")}…`) + tail;
+}
+function pageHead({ title, description, path, image = `${SITE}/og.jpg`, index = true }) {
+	const url = `${SITE}${path}`;
+	return {
+		meta: [
+			{ title },
+			{
+				name: "description",
+				content: description
+			},
+			{
+				name: "robots",
+				content: index ? "index,follow" : "noindex,follow"
+			},
+			{
+				property: "og:title",
+				content: title
+			},
+			{
+				property: "og:description",
+				content: description
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				property: "og:url",
+				content: url
+			},
+			{
+				property: "og:image",
+				content: image
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			}
+		],
+		links: [{
+			rel: "canonical",
+			href: url
+		}]
+	};
+}
+var homeHead = pageHead({
+	title: "The Visual Gospel — Free 30-Week Leader Guide",
+	description: HOME_DESCRIPTION,
+	path: "/"
+});
+function weekHead(week) {
+	return pageHead({
+		title: weekTitle(week),
+		description: weekDescription(week),
+		path: `/week/${week.n}`,
+		image: `${SITE}/slides/${weekFileBase(week)}.jpg`
+	});
+}
+function jsonLd(data) {
+	return {
+		type: "application/ld+json",
+		children: JSON.stringify(data).replace(/</g, "\\u003c")
+	};
+}
+function homeJsonLd() {
+	return jsonLd({
+		"@context": "https://schema.org",
+		"@type": "LearningResource",
+		name: "The Visual Gospel Leader Guide",
+		url: SITE,
+		description: HOME_DESCRIPTION,
+		isAccessibleForFree: true,
+		inLanguage: "en",
+		educationalUse: "small group study",
+		author: {
+			"@type": "Person",
+			name: "Philip Leineweber"
+		},
+		isBasedOn: {
+			"@type": "Book",
+			name: "The Visual Gospel",
+			isbn: "9798194307937",
+			url: BOOK,
+			author: {
+				"@type": "Person",
+				name: "Philip Leineweber"
+			}
+		},
+		hasPart: WEEKS.map((week) => ({
+			"@type": "LearningResource",
+			name: week.word,
+			url: `${SITE}/week/${week.n}`,
+			position: week.n
+		}))
+	});
+}
+function weekJsonLd(week) {
+	return jsonLd({
+		"@context": "https://schema.org",
+		"@type": "LearningResource",
+		name: `${week.word} — Week ${week.n}`,
+		url: `${SITE}/week/${week.n}`,
+		description: week.definition,
+		isAccessibleForFree: true,
+		teaches: week.word,
+		citation: week.ref,
+		author: {
+			"@type": "Person",
+			name: "Philip Leineweber"
+		},
+		isPartOf: {
+			"@type": "LearningResource",
+			name: "The Visual Gospel Leader Guide",
+			url: SITE
+		},
+		isBasedOn: {
+			"@type": "Book",
+			name: "The Visual Gospel",
+			url: BOOK
+		}
+	});
+}
+//#endregion
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DqGjQ7mM.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var __defProp = Object.defineProperty;
 var __exportAll = (all, no_symbols) => {
@@ -2257,7 +2392,7 @@ var Route$7 = createRootRoute({
 			{ title: "The Visual Gospel — Leader Guide" },
 			{
 				name: "description",
-				content: "A free 30-week leader guide for The Visual Gospel: icebreakers, definitions, memory verses, and new discussion questions for groups, classes, and youth."
+				content: "A free 30-week leader guide for The Visual Gospel: the word, a plain definition, a memory verse, and discussion for small groups, classes, and youth."
 			},
 			{
 				name: "theme-color",
@@ -2314,24 +2449,39 @@ function Root() {
 		] })]
 	});
 }
-var $$splitComponentImporter$5 = () => import("./routes-BrqRbhHJ.mjs");
-var Route$6 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
-var $$splitComponentImporter$4 = () => import("./print-mycwTXfu.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-DzZzxEq0.mjs");
+var Route$6 = createFileRoute("/")({
+	head: () => ({
+		...homeHead,
+		scripts: [homeJsonLd()]
+	}),
+	component: lazyRouteComponent($$splitComponentImporter$5, "component")
+});
+var $$splitComponentImporter$4 = () => import("./print-CFzOiPXr.mjs");
 var Route$5 = createFileRoute("/print")({
 	validateSearch: (search) => {
 		const raw = Number(search.week);
 		if (Number.isInteger(raw) && raw >= 1 && raw <= 30) return { week: raw };
 		return {};
 	},
-	head: () => ({ meta: [{ title: "Print — The Visual Gospel Leader Guide" }] }),
+	head: () => pageHead({
+		title: "Print — The Visual Gospel Leader Guide",
+		description: "Print a week or the full leader guide.",
+		path: "/print",
+		index: false
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
 var $$splitComponentImporter$3 = () => import("./resources-yTmbUcUD.mjs");
 var Route$4 = createFileRoute("/resources")({
-	head: () => ({ meta: [{ title: "Resources — The Visual Gospel Leader Guide" }] }),
+	head: () => pageHead({
+		title: "Resources — The Visual Gospel Leader Guide",
+		description: "Buy The Visual Gospel, open the flash card app, and download the free leader guide, weekly lesson PDFs, and slide decks.",
+		path: "/resources"
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("../_week-bIBmtVjE.mjs");
+var $$splitComponentImporter$2 = () => import("../_week-By8uQ0Ia.mjs");
 var Route$3 = createFileRoute("/slide/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -2342,7 +2492,10 @@ var Route$3 = createFileRoute("/slide/$week")({
 		if (!week) throw notFound();
 		return week;
 	},
-	head: ({ loaderData }) => ({ meta: loaderData ? [{ title: `${loaderData.word} — slide` }] : [{ title: "Slide" }] }),
+	head: () => ({ meta: [{ title: "Slide" }, {
+		name: "robots",
+		content: "noindex,follow"
+	}] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
 var Route$2 = createFileRoute("/slides/")({ beforeLoad: () => {
@@ -2352,7 +2505,7 @@ var Route$2 = createFileRoute("/slides/")({ beforeLoad: () => {
 	});
 } });
 var $$splitNotFoundComponentImporter$1 = () => import("../_week-BXhqCJGk.mjs");
-var $$splitComponentImporter$1 = () => import("../_week-D_CSQE27.mjs");
+var $$splitComponentImporter$1 = () => import("../_week-zSMzUokV.mjs");
 var Route$1 = createFileRoute("/slides/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -2363,19 +2516,30 @@ var Route$1 = createFileRoute("/slides/$week")({
 		if (!week) throw notFound();
 		return week;
 	},
-	head: ({ loaderData }) => ({ meta: loaderData ? [{ title: `Slides · ${loaderData.word} — The Visual Gospel` }] : [{ title: "Slides — The Visual Gospel" }] }),
+	head: ({ loaderData }) => loaderData ? pageHead({
+		title: `Slides · ${loaderData.word} — The Visual Gospel`,
+		description: `Project the ${loaderData.word} lesson.`,
+		path: `/week/${loaderData.n}`,
+		index: false
+	}) : { meta: [{ title: "Slides — The Visual Gospel" }, {
+		name: "robots",
+		content: "noindex,follow"
+	}] },
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	notFoundComponent: lazyRouteComponent($$splitNotFoundComponentImporter$1, "notFoundComponent")
 });
 var $$splitNotFoundComponentImporter = () => import("../_week-DTBknXsf.mjs");
-var $$splitComponentImporter = () => import("../_week-BuVKvIRa.mjs");
+var $$splitComponentImporter = () => import("../_week-DDuxusyJ.mjs");
 var Route = createFileRoute("/week/$week")({
 	loader: ({ params }) => {
 		const week = weekByNumber(Number(params.week));
 		if (!week) throw notFound();
 		return week;
 	},
-	head: ({ loaderData }) => ({ meta: loaderData ? [{ title: `Week ${loaderData.n} · ${loaderData.word} — Leader Guide` }] : [{ title: "Leader Guide" }] }),
+	head: ({ loaderData }) => loaderData ? {
+		...weekHead(loaderData),
+		scripts: [weekJsonLd(loaderData)]
+	} : { meta: [{ title: "Leader Guide" }] },
 	component: lazyRouteComponent($$splitComponentImporter, "component"),
 	notFoundComponent: lazyRouteComponent($$splitNotFoundComponentImporter, "notFoundComponent")
 });
@@ -2430,4 +2594,4 @@ function getRouter() {
 	});
 }
 //#endregion
-export { weekByNumber as _, Route$5 as a, SLIDES as c, PARTS as d, WEEKS as f, partOf as g, isPartStart as h, Route$3 as i, SLIDE_COUNT as l, cn as m, Route as n, meetingLabel as o, artSrc as p, Route$1 as r, useGuide as s, router_exports as t, Slide as u, weekFileBase as v };
+export { partOf as _, Route$5 as a, BOOK as c, Slide as d, PARTS as f, isPartStart as g, cn as h, Route$3 as i, SLIDES as l, artSrc as m, Route as n, meetingLabel as o, WEEKS as p, Route$1 as r, useGuide as s, router_exports as t, SLIDE_COUNT as u, weekByNumber as v, weekFileBase as y };

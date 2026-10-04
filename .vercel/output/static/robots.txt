@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /print
+Disallow: /slide/
+
+Sitemap: https://curriculum.visualgospelbook.com/sitemap.xml

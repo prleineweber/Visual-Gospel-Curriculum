@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-DCcRv71k.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-CEW3XrMD.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "/workspace/src/routes/__root.tsx",
@@ -12,7 +12,7 @@ var tsrStartManifest = () => ({ routes: {
 			"/slides/"
 		],
 		preloads: [
-			"/assets/index-UaKBP5Bx.js",
+			"/assets/index-BnMlj7rz.js",
 			"/assets/link-ByeF3nDZ.js",
 			"/assets/not-found-i5RsCZif.js",
 			"/assets/cn-CJ2cz5I3.js"
@@ -20,14 +20,14 @@ var tsrStartManifest = () => ({ routes: {
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-UaKBP5Bx.js"
+			src: "/assets/index-BnMlj7rz.js"
 		} }]
 	},
 	"/": {
 		filePath: "/workspace/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-BKC0X-TJ.js",
+			"/assets/routes-B8cYBNJh.js",
 			"/assets/HowTo-CnFBz5y0.js",
 			"/assets/Shell-CqB47iYL.js"
 		]
@@ -36,20 +36,20 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/workspace/src/routes/print.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/print-CtPXTL7o.js",
+			"/assets/print-DLHjPBjq.js",
 			"/assets/HowTo-CnFBz5y0.js",
-			"/assets/WeekBody-C1sACmjC.js"
+			"/assets/WeekBody-C6pAjzjw.js"
 		]
 	},
 	"/resources": {
 		filePath: "/workspace/src/routes/resources.tsx",
 		children: void 0,
-		preloads: ["/assets/resources-DccEMvUR.js", "/assets/Shell-CqB47iYL.js"]
+		preloads: ["/assets/resources-BSkjNfr7.js", "/assets/Shell-CqB47iYL.js"]
 	},
 	"/slide/$week": {
 		filePath: "/workspace/src/routes/slide/$week.tsx",
 		children: void 0,
-		preloads: ["/assets/_week-Ch8OVauM.js"]
+		preloads: ["/assets/_week-BHa2ItBx.js"]
 	},
 	"/slides/$week": {
 		filePath: "/workspace/src/routes/slides/$week.tsx",
@@ -57,17 +57,17 @@ var tsrStartManifest = () => ({ routes: {
 		preloads: [
 			"/assets/_week-By4vffUc.js",
 			"/assets/Shell-CqB47iYL.js",
-			"/assets/_week-CJmBHbWk.js"
+			"/assets/_week-x-yJG8j5.js"
 		]
 	},
 	"/week/$week": {
 		filePath: "/workspace/src/routes/week/$week.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/_week-DuijgVNH.js",
+			"/assets/_week-Csui2Pjd.js",
 			"/assets/Shell-CqB47iYL.js",
-			"/assets/_week-FHdDu-tb.js",
-			"/assets/WeekBody-C1sACmjC.js"
+			"/assets/WeekBody-C6pAjzjw.js",
+			"/assets/_week-DuijgVNH.js"
 		]
 	}
 } });

@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import { artSrc, isPartStart, partOf, weekByNumber, type Week } from "@/data";
+import { artSrc, isPartStart, partOf, weekByNumber, type Prompt, type Week } from "@/data";
 import { meetingLabel, useGuide } from "@/lib/guide-store";
 import { cn } from "@/lib/cn";
-import type { Prompt } from "@/data";
+import { BOOK } from "@/lib/seo";
 
 const STEPS = [
   ["ice", "Icebreaker", "7 min"],
@@ -187,6 +187,13 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
           </div>
         </dl>
         <p className="mt-4 text-sm leading-relaxed">
+          The drawing and the personal questions for this word are day {week.n} of{" "}
+          <a className="font-semibold underline decoration-line-strong underline-offset-2" href={BOOK}>
+            The Visual Gospel
+          </a>
+          . Read that day before you teach it.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed">
           Together, open the{" "}
           <a className="underline decoration-line-strong underline-offset-2" href="https://cards.visualgospelbook.com/">
             flashcard

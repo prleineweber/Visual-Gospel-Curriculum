@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A free 30-week leader guide for The Visual Gospel: icebreakers, definitions, memory verses, and new discussion questions for groups, classes, and youth.",
+          "A free 30-week leader guide for The Visual Gospel: the word, a plain definition, a memory verse, and discussion for small groups, classes, and youth.",
       },
       { name: "theme-color", content: "#f4f1e8" },
     ],

@@ -1,8 +1,8 @@
 import { S as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { _ as weekByNumber, a as Route$5, d as PARTS, f as WEEKS } from "./router-Bm125koz.mjs";
-import { t as WeekBody } from "./WeekBody-Co5i2z0_.mjs";
+import { a as Route$5, f as PARTS, p as WEEKS, v as weekByNumber } from "./router-DqGjQ7mM.mjs";
+import { t as WeekBody } from "./WeekBody-uNyiz3SY.mjs";
 import { t as HowTo } from "./HowTo-GGZ_M1T2.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/print-mycwTXfu.js
+//#region node_modules/.nitro/vite/services/ssr/assets/print-CFzOiPXr.js
 var import_jsx_runtime = require_jsx_runtime();
 function PrintGuide({ only }) {
 	const weeks = only ? [weekByNumber(only)].filter((w) => w != null) : WEEKS;

@@ -1,4 +1,5 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
+import { weekHead, weekJsonLd } from "@/lib/seo";
 import { weekByNumber } from "@/data";
 import { Shell } from "@/components/guide/Shell";
 import { WeekBody } from "@/components/guide/WeekBody";
@@ -10,11 +11,10 @@ export const Route = createFileRoute("/week/$week")({
     if (!week) throw notFound();
     return week;
   },
-  head: ({ loaderData }) => ({
-    meta: loaderData
-      ? [{ title: `Week ${loaderData.n} · ${loaderData.word} — Leader Guide` }]
-      : [{ title: "Leader Guide" }],
-  }),
+  head: ({ loaderData }) =>
+    loaderData
+      ? { ...weekHead(loaderData), scripts: [weekJsonLd(loaderData)] }
+      : { meta: [{ title: "Leader Guide" }] },
   component: WeekPage,
   notFoundComponent: Missing,
 });

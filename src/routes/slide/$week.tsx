@@ -14,8 +14,8 @@ export const Route = createFileRoute("/slide/$week")({
     if (!week) throw notFound();
     return week;
   },
-  head: ({ loaderData }) => ({
-    meta: loaderData ? [{ title: `${loaderData.word} — slide` }] : [{ title: "Slide" }],
+  head: () => ({
+    meta: [{ title: "Slide" }, { name: "robots", content: "noindex,follow" }],
   }),
   component: ExportSlide,
 });
