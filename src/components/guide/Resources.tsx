@@ -13,7 +13,7 @@ export function Resources() {
       <p className="text-xs font-semibold tracking-widest text-muted uppercase">For the leader</p>
       <h1 className="font-display mt-3 text-5xl leading-none font-semibold tracking-tight md:text-6xl">Resources</h1>
       <p className="mt-5 max-w-2xl text-lg leading-relaxed">
-        The devotional, the flash cards, the full guide, a PDF for each week, and a slide deck you can project.
+        The devotional, the digital flash card app, the full guide, a PDF for each week, and a slide deck you can project.
       </p>
 
       <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -42,13 +42,13 @@ export function Resources() {
         <section className="flex flex-col items-start gap-4 rounded-card border border-line bg-elevated p-4 sm:flex-row lg:flex-col md:p-5">
           <img
             src="/cards-preview.jpg"
-            alt="A Visual Gospel flash card, Day 1 of 30"
-            width={860}
-            height={1120}
+            alt="The Visual Gospel digital flash card app"
+            width={1392}
+            height={1742}
             className="h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-36"
           />
           <div className="flex min-w-0 flex-1 flex-col">
-            <h2 className="font-display text-2xl font-semibold">The flash cards</h2>
+            <h2 className="font-display text-2xl font-semibold">The digital flash card app</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               The thirty words, one card at a time: the drawing, the definition, and the memory verse. For class, or to
               put in someone’s hands.
@@ -57,7 +57,7 @@ export function Resources() {
               href="https://cards.visualgospelbook.com/"
               className="mt-4 inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold"
             >
-              Open the flash cards
+              Open the app
             </a>
           </div>
         </section>
@@ -66,9 +66,9 @@ export function Resources() {
           <img
             src="/guide-preview.jpg"
             alt="First page of The Visual Gospel Leader Guide"
-            width={1316}
-            height={946}
-            className="h-auto w-full max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-full"
+            width={1392}
+            height={1742}
+            className="h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-36"
           />
           <div className="min-w-0">
             <h2 className="font-display text-2xl font-semibold">The full leader guide</h2>

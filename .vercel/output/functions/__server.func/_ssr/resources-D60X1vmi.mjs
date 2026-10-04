@@ -2,7 +2,7 @@ import { i as __toESM } from "../_runtime.mjs";
 import { a as PARTS, f as weekFileBase, o as WEEKS, r as Slide } from "./Slide-Bg0mTIzY.mjs";
 import { X as require_jsx_runtime, Y as require_react, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Shell } from "./Shell-UQz4vjBr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/resources-CTNyJMBC.js
+//#region node_modules/.nitro/vite/services/ssr/assets/resources-D60X1vmi.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var BUY = "https://www.amazon.com/dp/B0HLC7QP8N";
@@ -21,7 +21,7 @@ function Resources() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-5 max-w-2xl text-lg leading-relaxed",
-				children: "The devotional, the flash cards, the full guide, a PDF for each week, and a slide deck you can project."
+				children: "The devotional, the digital flash card app, the full guide, a PDF for each week, and a slide deck you can project."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3",
@@ -57,16 +57,16 @@ function Resources() {
 						className: "flex flex-col items-start gap-4 rounded-card border border-line bg-elevated p-4 sm:flex-row lg:flex-col md:p-5",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: "/cards-preview.jpg",
-							alt: "A Visual Gospel flash card, Day 1 of 30",
-							width: 860,
-							height: 1120,
+							alt: "The Visual Gospel digital flash card app",
+							width: 1392,
+							height: 1742,
 							className: "h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-36"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "flex min-w-0 flex-1 flex-col",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 									className: "font-display text-2xl font-semibold",
-									children: "The flash cards"
+									children: "The digital flash card app"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "mt-2 text-sm leading-relaxed text-muted",
@@ -75,7 +75,7 @@ function Resources() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 									href: "https://cards.visualgospelbook.com/",
 									className: "mt-4 inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold",
-									children: "Open the flash cards"
+									children: "Open the app"
 								})
 							]
 						})]
@@ -85,9 +85,9 @@ function Resources() {
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: "/guide-preview.jpg",
 							alt: "First page of The Visual Gospel Leader Guide",
-							width: 1316,
-							height: 946,
-							className: "h-auto w-full max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-full"
+							width: 1392,
+							height: 1742,
+							className: "h-auto w-36 max-w-full shrink-0 self-start border border-line object-contain sm:w-28 lg:w-36"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "min-w-0",
 							children: [
