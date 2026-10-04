@@ -56,6 +56,8 @@ export function Resources() {
             </p>
             <a
               href="https://cards.visualgospelbook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold"
             >
               Open the app

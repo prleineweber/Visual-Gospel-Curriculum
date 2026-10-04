@@ -1,5 +1,5 @@
-import { S as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/HowTo-BRdRoa7L.js
+import { X as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/HowTo-BgUgKlwT.js
 var import_jsx_runtime = require_jsx_runtime();
 var MOVES = [
 	[
@@ -92,7 +92,19 @@ function HowTo({ compact = false }) {
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 						className: "list-disc space-y-2 pl-5",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Read the day in The Visual Gospel yourself. Do not summarize the essay back to people who read it." }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
+								"Read the day in",
+								" ",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									className: "font-semibold underline decoration-line-strong underline-offset-2",
+									href: "https://visualgospelbook.com/",
+									target: "_blank",
+									rel: "noopener noreferrer",
+									children: "The Visual Gospel"
+								}),
+								" ",
+								"yourself. Do not summarize the devotional back to people who read it."
+							] }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Read the gathering’s passage in your own Bible. The excerpt in the guide is a backup, not a replacement." }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Skim “Before you stumble.” The hard weeks — wrath, depravity, propitiation, election — have a line you can say without starting a debate." }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Have the drawing ready: the book, a printed page, or a screen. Have Bibles in the room. Phones are for the card, then they go down." })

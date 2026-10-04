@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { S as require_jsx_runtime, X as require_react, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { a as PARTS, f as weekFileBase, o as WEEKS, r as Slide } from "./Slide-Bg0mTIzY.mjs";
+import { X as require_jsx_runtime, Y as require_react, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Shell } from "./Shell-CyzBgkTK.mjs";
-import { f as PARTS, p as WEEKS, u as Slide, y as weekFileBase } from "./router-B4JVgVtG.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/resources-Dmuq3zRz.js
+//#region node_modules/.nitro/vite/services/ssr/assets/resources-CGL0Wovl.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var BUY = "https://www.amazon.com/dp/B0HLC7QP8N";
@@ -74,6 +74,8 @@ function Resources() {
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 									href: "https://cards.visualgospelbook.com/",
+									target: "_blank",
+									rel: "noopener noreferrer",
 									className: "mt-4 inline-flex min-h-11 w-fit items-center rounded-full border border-line-strong px-4 text-sm font-semibold",
 									children: "Open the app"
 								})

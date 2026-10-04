@@ -46,7 +46,18 @@ export function HowTo({ compact = false }: { compact?: boolean }) {
           <section className="max-w-2xl space-y-3 leading-relaxed">
             <h3 className="font-display text-2xl font-semibold">Before you walk in</h3>
             <ul className="list-disc space-y-2 pl-5">
-              <li>Read the day in The Visual Gospel yourself. Do not summarize the essay back to people who read it.</li>
+              <li>
+                Read the day in{" "}
+                <a
+                  className="font-semibold underline decoration-line-strong underline-offset-2"
+                  href="https://visualgospelbook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Visual Gospel
+                </a>{" "}
+                yourself. Do not summarize the devotional back to people who read it.
+              </li>
               <li>Read the gathering’s passage in your own Bible. The excerpt in the guide is a backup, not a replacement.</li>
               <li>Skim “Before you stumble.” The hard weeks — wrath, depravity, propitiation, election — have a line you can say without starting a debate.</li>
               <li>Have the drawing ready: the book, a printed page, or a screen. Have Bibles in the room. Phones are for the card, then they go down.</li>

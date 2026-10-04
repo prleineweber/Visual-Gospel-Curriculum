@@ -1,6 +1,7 @@
-import { S as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { _ as partOf, d as BOOK, g as isPartStart, h as cn, m as artSrc, o as meetingLabel, s as useGuide, v as weekByNumber } from "./router-B4JVgVtG.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-C9yRrPz8.js
+import { c as cn, d as weekByNumber, l as isPartStart, s as artSrc, u as partOf } from "./Slide-Bg0mTIzY.mjs";
+import { X as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { c as BOOK, o as meetingLabel, s as useGuide } from "./router-CnetZR4E.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-DQj5la3Z.js
 var import_jsx_runtime = require_jsx_runtime();
 var STEPS = [
 	[
@@ -205,7 +206,16 @@ function WeekBody({ week, mode = "screen" }) {
 							week.n,
 							", ",
 							week.word,
-							", in The Visual Gospel. Do not reteach the essay."
+							", in",
+							" ",
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								className: "font-semibold underline decoration-line-strong underline-offset-2",
+								href: BOOK,
+								target: "_blank",
+								rel: "noopener noreferrer",
+								children: "The Visual Gospel"
+							}),
+							". Do not reteach the devotional."
 						] }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
 							"Read ",

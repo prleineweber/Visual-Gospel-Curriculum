@@ -151,7 +151,18 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
       <section className="mt-8 rounded-card border border-line bg-elevated px-4 py-4 md:px-5">
         <h2 className="font-display text-xl font-semibold">Before you gather</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-relaxed">
-          <li>Read Day {week.n}, {week.word}, in The Visual Gospel. Do not reteach the essay.</li>
+          <li>
+            Read Day {week.n}, {week.word}, in{" "}
+            <a
+              className="font-semibold underline decoration-line-strong underline-offset-2"
+              href={BOOK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The Visual Gospel
+            </a>
+            . Do not reteach the devotional.
+          </li>
           <li>Read {week.passageRef} in your Bible. The excerpt below is only a backup.</li>
           <li>Your people should already have answered the day’s reflection questions. Do not ask those again.</li>
           <li>Leave with a name. The missional challenge only works if someone is named before you pray.</li>

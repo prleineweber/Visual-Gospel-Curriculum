@@ -1,8 +1,8 @@
-import { S as require_jsx_runtime } from "./_libs/@tanstack/react-router+[...].mjs";
+import { X as require_jsx_runtime } from "./_libs/@tanstack/react-router+[...].mjs";
+import { n as Route } from "./_ssr/router-CnetZR4E.mjs";
 import { t as Shell } from "./_ssr/Shell-CyzBgkTK.mjs";
-import { n as Route } from "./_ssr/router-B4JVgVtG.mjs";
-import { t as WeekBody } from "./_ssr/WeekBody-C9yRrPz8.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_week-KlLvlOFr.js
+import { t as WeekBody } from "./_ssr/WeekBody-DQj5la3Z.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/_week-JPuUU0U1.js
 var import_jsx_runtime = require_jsx_runtime();
 function WeekPage() {
 	const week = Route.useLoaderData();

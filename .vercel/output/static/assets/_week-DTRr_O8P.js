@@ -1,1 +1,0 @@
-import{s as e}from"./link-ByeF3nDZ.js";import{t}from"./index-CQfGdXP2.js";import{t as n}from"./Shell-Bda50YOE.js";import{t as r}from"./WeekBody-DWI3XkYF.js";var i=e();function a(){let e=t.useLoaderData();return(0,i.jsx)(n,{children:(0,i.jsx)(`main`,{className:`mx-auto max-w-3xl px-4 py-8 md:px-6 md:py-10`,children:(0,i.jsx)(r,{week:e})})})}export{a as component};
