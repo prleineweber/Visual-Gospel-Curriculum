@@ -1,1 +1,0 @@
-import{s as e}from"./link-ByeF3nDZ.js";import{r as t}from"./index-DfsDLGyk.js";import{t as n}from"./Slide-SoM9NZmn.js";var r=e();function i(){let e=t.useLoaderData();return(0,r.jsx)(`main`,{className:`bg-paper`,children:(0,r.jsx)(n,{week:e})})}export{i as component};
