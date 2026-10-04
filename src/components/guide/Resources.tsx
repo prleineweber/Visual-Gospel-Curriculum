@@ -13,7 +13,7 @@ export function Resources() {
       <p className="text-xs font-semibold tracking-widest text-muted uppercase">For the leader</p>
       <h1 className="font-display mt-3 text-5xl leading-none font-semibold tracking-tight md:text-6xl">Resources</h1>
       <p className="mt-5 max-w-2xl text-lg leading-relaxed">
-        The devotional, the digital flash card app, the full guide, a PDF for each week, and a slide deck you can project.
+        The devotional, the digital flash card app, the full guide, a PDF for each week, and a slide deck you can download or project.
       </p>
 
       <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -28,13 +28,14 @@ export function Resources() {
           <div className="min-w-0">
             <h2 className="font-display text-2xl font-semibold">The devotional</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              Thirty days. The drawings, the definitions, and the personal reflection questions live in the book.
+              Thirty days. The drawings, the definitions, and the personal reflection questions live in the book. Put a
+              copy in their hands so they meet the word before the group does.
             </p>
             <a
               href={BUY}
-              className="mt-4 inline-flex min-h-11 items-center rounded-full bg-ink px-4 text-sm font-semibold text-elevated"
+              className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-ink px-5 text-sm font-semibold text-elevated"
             >
-              Buy the devotional
+              Buy the book
             </a>
           </div>
         </section>

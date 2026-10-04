@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { a as PARTS, f as weekFileBase, o as WEEKS, r as Slide } from "./Slide-Bg0mTIzY.mjs";
-import { X as require_jsx_runtime, Y as require_react, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { S as require_jsx_runtime, X as require_react, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Shell } from "./Shell-UQz4vjBr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/resources-D60X1vmi.js
+import { d as PARTS, f as WEEKS, u as Slide, v as weekFileBase } from "./router-CZv1R4-Y.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/resources-yTmbUcUD.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var BUY = "https://www.amazon.com/dp/B0HLC7QP8N";
@@ -21,7 +21,7 @@ function Resources() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-5 max-w-2xl text-lg leading-relaxed",
-				children: "The devotional, the digital flash card app, the full guide, a PDF for each week, and a slide deck you can project."
+				children: "The devotional, the digital flash card app, the full guide, a PDF for each week, and a slide deck you can download or project."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3",
@@ -43,12 +43,12 @@ function Resources() {
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 									className: "mt-2 text-sm leading-relaxed text-muted",
-									children: "Thirty days. The drawings, the definitions, and the personal reflection questions live in the book."
+									children: "Thirty days. The drawings, the definitions, and the personal reflection questions live in the book. Put a copy in their hands so they meet the word before the group does."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 									href: BUY,
-									className: "mt-4 inline-flex min-h-11 items-center rounded-full bg-ink px-4 text-sm font-semibold text-elevated",
-									children: "Buy the devotional"
+									className: "mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-ink px-5 text-sm font-semibold text-elevated",
+									children: "Buy the book"
 								})
 							]
 						})]

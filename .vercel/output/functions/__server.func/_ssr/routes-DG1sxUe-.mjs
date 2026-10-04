@@ -1,9 +1,8 @@
-import { a as PARTS, c as cn, o as WEEKS, u as partOf } from "./Slide-Bg0mTIzY.mjs";
-import { X as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { o as meetingLabel, s as useGuide } from "./router-CUH8su-N.mjs";
+import { S as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Shell } from "./Shell-UQz4vjBr.mjs";
+import { d as PARTS, f as WEEKS, g as partOf, m as cn, o as meetingLabel, s as useGuide } from "./router-CZv1R4-Y.mjs";
 import { t as HowTo } from "./HowTo-GGZ_M1T2.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-mTIUqdiL.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DG1sxUe-.js
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {
 	const hydrated = useGuide((s) => s.hydrated);
@@ -44,6 +43,11 @@ function Home() {
 									children: finished > 0 && finished < 30 ? `Continue · Week ${next.n}, ${next.word}` : `Start with ${next.word}`
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									href: "https://visualgospelbook.com/",
+									className: "inline-flex min-h-11 items-center rounded-full bg-ink px-5 text-sm font-semibold text-elevated",
+									children: "The book"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 									href: "/the-visual-gospel-leader-guide.pdf",
 									download: true,
 									className: "inline-flex min-h-11 items-center rounded-full border border-line-strong px-5 text-sm font-semibold",
@@ -53,24 +57,19 @@ function Home() {
 									to: "/resources",
 									className: "inline-flex min-h-11 items-center rounded-full border border-line-strong px-5 text-sm font-semibold",
 									children: "Resources"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-									href: "https://visualgospelbook.com/",
-									className: "inline-flex min-h-11 items-center px-2 text-sm font-semibold underline decoration-line-strong underline-offset-4",
-									children: "The book"
 								})
 							]
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "https://visualgospelbook.com/",
-					className: "order-1 w-40 shrink-0 md:order-2 md:w-64",
+					className: "order-1 w-44 shrink-0 md:order-2 md:w-72",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 						src: "/cover.jpg",
 						alt: "Cover of The Visual Gospel by Philip Leineweber",
 						width: 780,
 						height: 1004,
-						className: "w-full border border-line bg-elevated shadow-md"
+						className: "w-full border border-line bg-elevated shadow-lg"
 					})
 				})]
 			}),

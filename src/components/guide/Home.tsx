@@ -37,6 +37,12 @@ export function Home() {
               {finished > 0 && finished < 30 ? `Continue · Week ${next.n}, ${next.word}` : `Start with ${next.word}`}
             </Link>
             <a
+              href="https://visualgospelbook.com/"
+              className="inline-flex min-h-11 items-center rounded-full bg-ink px-5 text-sm font-semibold text-elevated"
+            >
+              The book
+            </a>
+            <a
               href="/the-visual-gospel-leader-guide.pdf"
               download
               className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-5 text-sm font-semibold"
@@ -49,21 +55,15 @@ export function Home() {
             >
               Resources
             </Link>
-            <a
-              href="https://visualgospelbook.com/"
-              className="inline-flex min-h-11 items-center px-2 text-sm font-semibold underline decoration-line-strong underline-offset-4"
-            >
-              The book
-            </a>
           </div>
         </div>
-        <a href="https://visualgospelbook.com/" className="order-1 w-40 shrink-0 md:order-2 md:w-64">
+        <a href="https://visualgospelbook.com/" className="order-1 w-44 shrink-0 md:order-2 md:w-72">
           <img
             src="/cover.jpg"
             alt="Cover of The Visual Gospel by Philip Leineweber"
             width={780}
             height={1004}
-            className="w-full border border-line bg-elevated shadow-md"
+            className="w-full border border-line bg-elevated shadow-lg"
           />
         </a>
       </div>

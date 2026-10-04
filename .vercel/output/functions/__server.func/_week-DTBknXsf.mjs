@@ -1,4 +1,4 @@
-import { X as require_jsx_runtime } from "./_libs/@tanstack/react-router+[...].mjs";
+import { S as require_jsx_runtime } from "./_libs/@tanstack/react-router+[...].mjs";
 import { t as Shell } from "./_ssr/Shell-UQz4vjBr.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/_week-DTBknXsf.js
 var import_jsx_runtime = require_jsx_runtime();
