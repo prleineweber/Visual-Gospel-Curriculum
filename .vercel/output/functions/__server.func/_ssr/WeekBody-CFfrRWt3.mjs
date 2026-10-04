@@ -1,6 +1,6 @@
 import { S as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { _ as partOf, c as BOOK, g as isPartStart, h as cn, m as artSrc, o as meetingLabel, s as useGuide, v as weekByNumber } from "./router-DqGjQ7mM.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-uNyiz3SY.js
+import { _ as partOf, c as BOOK, g as isPartStart, h as cn, m as artSrc, o as meetingLabel, s as useGuide, v as weekByNumber } from "./router-C5OjXpej.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/WeekBody-CFfrRWt3.js
 var import_jsx_runtime = require_jsx_runtime();
 var STEPS = [
 	[
@@ -10,7 +10,7 @@ var STEPS = [
 	],
 	[
 		"word",
-		"The word",
+		"The Word",
 		"8 min"
 	],
 	[
@@ -242,7 +242,7 @@ function WeekBody({ week, mode = "screen" }) {
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "text-xs font-semibold tracking-widest text-muted uppercase",
-						children: "2 · The word · 8 min"
+						children: "2 · The Word · 8 min"
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 						className: "font-display mt-1 text-3xl font-semibold",
@@ -287,16 +287,19 @@ function WeekBody({ week, mode = "screen" }) {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 						className: "mt-4 text-sm leading-relaxed",
 						children: [
-							"The drawing and the personal questions for this word are day ",
+							"Read day ",
 							week.n,
 							" of",
 							" ",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 								className: "font-semibold underline decoration-line-strong underline-offset-2",
 								href: BOOK,
+								target: "_blank",
+								rel: "noopener noreferrer",
 								children: "The Visual Gospel"
 							}),
-							". Read that day before you teach it."
+							" ",
+							"before you teach it. The drawing and the personal questions are there."
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {

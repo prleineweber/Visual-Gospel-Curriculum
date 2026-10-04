@@ -1,5 +1,5 @@
 import { S as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/HowTo-GGZ_M1T2.js
+//#region node_modules/.nitro/vite/services/ssr/assets/HowTo-BRdRoa7L.js
 var import_jsx_runtime = require_jsx_runtime();
 var MOVES = [
 	[
@@ -8,7 +8,7 @@ var MOVES = [
 		"A light question tied to the picture. People may pass."
 	],
 	[
-		"The word",
+		"The Word",
 		"8 min",
 		"Look at the drawing, read the definition, say the memory verse, open the card."
 	],

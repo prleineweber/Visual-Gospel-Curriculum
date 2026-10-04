@@ -2039,7 +2039,7 @@ function weekJsonLd(week) {
 	});
 }
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DqGjQ7mM.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-C5OjXpej.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var __defProp = Object.defineProperty;
 var __exportAll = (all, no_symbols) => {
@@ -2449,7 +2449,7 @@ function Root() {
 		] })]
 	});
 }
-var $$splitComponentImporter$5 = () => import("./routes-DzZzxEq0.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-XwCO5LD8.mjs");
 var Route$6 = createFileRoute("/")({
 	head: () => ({
 		...homeHead,
@@ -2457,7 +2457,7 @@ var Route$6 = createFileRoute("/")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./print-CFzOiPXr.mjs");
+var $$splitComponentImporter$4 = () => import("./print-Dgg8VY3B.mjs");
 var Route$5 = createFileRoute("/print")({
 	validateSearch: (search) => {
 		const raw = Number(search.week);
@@ -2481,7 +2481,7 @@ var Route$4 = createFileRoute("/resources")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("../_week-By8uQ0Ia.mjs");
+var $$splitComponentImporter$2 = () => import("../_week-BrHiGePM.mjs");
 var Route$3 = createFileRoute("/slide/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -2505,7 +2505,7 @@ var Route$2 = createFileRoute("/slides/")({ beforeLoad: () => {
 	});
 } });
 var $$splitNotFoundComponentImporter$1 = () => import("../_week-BXhqCJGk.mjs");
-var $$splitComponentImporter$1 = () => import("../_week-zSMzUokV.mjs");
+var $$splitComponentImporter$1 = () => import("../_week-DT5266Nh.mjs");
 var Route$1 = createFileRoute("/slides/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -2529,7 +2529,7 @@ var Route$1 = createFileRoute("/slides/$week")({
 	notFoundComponent: lazyRouteComponent($$splitNotFoundComponentImporter$1, "notFoundComponent")
 });
 var $$splitNotFoundComponentImporter = () => import("../_week-DTBknXsf.mjs");
-var $$splitComponentImporter = () => import("../_week-DDuxusyJ.mjs");
+var $$splitComponentImporter = () => import("../_week-Cf_NXVYs.mjs");
 var Route = createFileRoute("/week/$week")({
 	loader: ({ params }) => {
 		const week = weekByNumber(Number(params.week));

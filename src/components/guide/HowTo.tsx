@@ -1,6 +1,6 @@
 const MOVES = [
   ["Icebreaker", "7 min", "A light question tied to the picture. People may pass."],
-  ["The word", "8 min", "Look at the drawing, read the definition, say the memory verse, open the card."],
+  ["The Word", "8 min", "Look at the drawing, read the definition, say the memory verse, open the card."],
   ["Open the Bible", "15 min", "A passage they did not already journal. Read it aloud. Ask what it says."],
   ["Around the room", "20 min", "Three new questions. Stay curious. Do not reteach the devotion."],
   ["Say it", "5 min", "Two volunteers put the word into one sentence a friend could understand."],

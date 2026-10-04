@@ -7,7 +7,7 @@ import { BOOK } from "@/lib/seo";
 
 const STEPS = [
   ["ice", "Icebreaker", "7 min"],
-  ["word", "The word", "8 min"],
+  ["word", "The Word", "8 min"],
   ["bible", "Open the Bible", "15 min"],
   ["talk", "Around the room", "20 min"],
   ["say", "Say it", "5 min"],
@@ -166,7 +166,7 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
       </section>
 
       <section id="word" className="mt-10 scroll-mt-24">
-        <p className="text-xs font-semibold tracking-widest text-muted uppercase">2 · The word · 8 min</p>
+        <p className="text-xs font-semibold tracking-widest text-muted uppercase">2 · The Word · 8 min</p>
         <h2 className="font-display mt-1 text-3xl font-semibold">See it, then say it</h2>
         <div className="mt-4 rounded-card bg-subtle px-4 py-4 md:px-5">
           <p className="text-xs font-semibold tracking-widest text-muted uppercase">If you need the words</p>
@@ -187,11 +187,16 @@ export function WeekBody({ week, mode = "screen" }: { week: Week; mode?: "screen
           </div>
         </dl>
         <p className="mt-4 text-sm leading-relaxed">
-          The drawing and the personal questions for this word are day {week.n} of{" "}
-          <a className="font-semibold underline decoration-line-strong underline-offset-2" href={BOOK}>
+          Read day {week.n} of{" "}
+          <a
+            className="font-semibold underline decoration-line-strong underline-offset-2"
+            href={BOOK}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             The Visual Gospel
-          </a>
-          . Read that day before you teach it.
+          </a>{" "}
+          before you teach it. The drawing and the personal questions are there.
         </p>
         <p className="mt-3 text-sm leading-relaxed">
           Together, open the{" "}
