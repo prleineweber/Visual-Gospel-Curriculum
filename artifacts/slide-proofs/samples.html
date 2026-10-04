@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face { font-family: Fraunces; src: url("../../node_modules/@fontsource/fraunces/files/fraunces-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+  @font-face { font-family: Fraunces; src: url("../../node_modules/@fontsource/fraunces/files/fraunces-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; }
+  @font-face { font-family: Fraunces; src: url("../../node_modules/@fontsource/fraunces/files/fraunces-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; }
+  @font-face { font-family: Figtree; src: url("../../node_modules/@fontsource/figtree/files/figtree-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+  @font-face { font-family: Figtree; src: url("../../node_modules/@fontsource/figtree/files/figtree-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+  @font-face { font-family: Figtree; src: url("../../node_modules/@fontsource/figtree/files/figtree-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; }
+  .slide { width: 1920px; height: 1080px; position: relative; overflow: hidden; }
+  .kicker { font-family: Figtree, sans-serif; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; font-size: 22px; }
+  .word { font-family: Fraunces, serif; font-weight: 700; letter-spacing: -0.03em; line-height: 0.9; }
+  .def, .verse, .lang { font-family: Figtree, sans-serif; }
+  .ref { font-family: Fraunces, serif; font-style: italic; font-weight: 400; }
+
+  /* A — the book, on a screen */
+  .a { background: #f6f3ec; color: #0d1d34; }
+  .a .wash {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 520px 640px at 8% 18%, rgba(90, 122, 156, 0.38), transparent 70%),
+      radial-gradient(ellipse 380px 280px at 22% 78%, rgba(125, 156, 184, 0.22), transparent 70%),
+      radial-gradient(ellipse 240px 240px at 92% 88%, rgba(90, 122, 156, 0.16), transparent 70%);
+  }
+  .a .art {
+    position: absolute; left: 70px; top: 70px; width: 980px; height: 760px;
+    object-fit: contain; mix-blend-mode: multiply;
+  }
+  .a .copy { position: absolute; right: 88px; top: 110px; width: 740px; }
+  .a .kicker { color: #3d5270; }
+  .a .word { font-size: 148px; margin-top: 18px; }
+  .a .rule { width: 92px; height: 4px; background: #0d1d34; margin: 28px 0 26px; }
+  .a .def { font-size: 36px; line-height: 1.35; font-weight: 500; }
+  .a .lang { margin-top: 28px; font-size: 22px; line-height: 1.4; color: #3d5270; }
+  .a .foot { position: absolute; left: 88px; bottom: 42px; font-family: Figtree, sans-serif; font-weight: 700; letter-spacing: 0.18em; font-size: 18px; color: #3d5270; }
+
+  .a.verse .art { width: 620px; height: 920px; left: 40px; top: 80px; }
+  .a.verse .copy { left: 700px; right: 90px; top: 150px; width: auto; }
+  .a.verse .verse { font-family: Fraunces, serif; font-weight: 600; font-size: 58px; line-height: 1.22; letter-spacing: -0.02em; }
+  .a.verse .ref { margin-top: 36px; font-size: 36px; }
+
+  /* B — pulpit: paper and ink */
+  .b { background: #0d1d34; color: #f6f3ec; display: flex; }
+  .b .stage {
+    width: 860px; height: 1080px; position: relative; background: #f3efe6; flex: none;
+  }
+  .b .stage::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 420px 520px at 20% 16%, rgba(90, 122, 156, 0.45), transparent 70%),
+      radial-gradient(ellipse 300px 240px at 80% 90%, rgba(125, 156, 184, 0.25), transparent 70%);
+  }
+  .b .art { position: absolute; inset: 70px 40px; width: calc(100% - 80px); height: calc(100% - 140px); object-fit: contain; mix-blend-mode: multiply; }
+  .b .copy { flex: 1; padding: 100px 84px 80px 72px; display: flex; flex-direction: column; }
+  .b .kicker { color: #c5d4e4; }
+  .b .word { font-size: 132px; margin-top: 22px; }
+  .b .rule { width: 84px; height: 4px; background: #d7e3ef; margin: 32px 0; }
+  .b .def { font-size: 36px; line-height: 1.35; color: #f6f3ec; }
+  .b .lang { margin-top: auto; font-size: 22px; line-height: 1.45; color: #c5d4e4; }
+  .b .count { position: absolute; right: 64px; bottom: 40px; font-family: Figtree, sans-serif; font-weight: 700; letter-spacing: 0.18em; font-size: 18px; color: #c5d4e4; }
+  .b.verse .verse { font-family: Fraunces, serif; font-weight: 600; font-size: 54px; line-height: 1.22; }
+  .b.verse .ref { margin-top: 36px; font-size: 34px; color: #d7e3ef; }
+
+  /* C — title card */
+  .c { background: #f4f1e8; color: #0d1d34; }
+  .c .field {
+    position: absolute; left: 0; right: 0; top: 0; height: 690px;
+    background:
+      radial-gradient(ellipse 640px 420px at 18% 30%, rgba(90, 122, 156, 0.34), transparent 70%),
+      #f7f4ee;
+  }
+  .c .art { position: absolute; left: 180px; top: 20px; width: 1560px; height: 640px; object-fit: contain; mix-blend-mode: multiply; }
+  .c .band {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 390px;
+    background: #0d1d34; color: #f6f3ec;
+    display: flex; align-items: center; padding: 0 88px; gap: 64px;
+  }
+  .c .word { font-size: 108px; width: 520px; flex: none; }
+  .c .band .rule { width: 3px; height: 180px; background: #d7e3ef; flex: none; }
+  .c .def { font-size: 36px; line-height: 1.35; max-width: 980px; }
+  .c .kicker { position: absolute; left: 88px; top: 36px; color: #0d1d34; z-index: 2; }
+  .c.verse .field { height: 1080px; }
+  .c.verse .art { width: 520px; height: 980px; left: 60px; top: 50px; }
+  .c.verse .verse-copy { position: absolute; left: 640px; right: 90px; top: 160px; }
+  .c.verse .verse { font-family: Fraunces, serif; font-weight: 600; font-size: 58px; line-height: 1.2; }
+  .c.verse .ref { margin-top: 32px; font-size: 36px; }
+  .c.verse .kicker { color: #3d5270; }
+</style>
+</head>
+<body>
+
+<section class="slide a" id="a-word">
+  <div class="wash"></div>
+  <img class="art" src="../../public/art/01.jpg" alt="" />
+  <div class="copy">
+    <p class="kicker">Week 1 · Part I · God’s heart</p>
+    <h1 class="word">Creation</h1>
+    <div class="rule"></div>
+    <p class="def">Creation is God making the whole world and everything in it. He made people in a special way so we could know, love, and reflect Him.</p>
+    <p class="lang">Hebrew asah — to fashion, accomplish, or produce. Greek poieō — to make, to create, to do.</p>
+  </div>
+  <p class="foot">1 / 8</p>
+</section>
+
+<section class="slide a verse" id="a-verse">
+  <div class="wash"></div>
+  <img class="art" src="../../public/art/01.jpg" alt="" />
+  <div class="copy">
+    <p class="kicker">Memory verse · Creation</p>
+    <p class="verse">Then God said, “Let us make man in our image, after our likeness.” So God created man in his own image, in the image of God he created him; male and female he created them.</p>
+    <p class="ref">Genesis 1:26–27</p>
+  </div>
+  <p class="foot">2 / 8</p>
+</section>
+
+<section class="slide b" id="b-word">
+  <div class="stage"><img class="art" src="../../public/art/01.jpg" alt="" /></div>
+  <div class="copy">
+    <p class="kicker">Week 1 · Part I</p>
+    <h1 class="word">Creation</h1>
+    <div class="rule"></div>
+    <p class="def">Creation is God making the whole world and everything in it. He made people in a special way so we could know, love, and reflect Him.</p>
+    <p class="lang">Hebrew asah — to fashion, accomplish, or produce. Greek poieō — to make, to create, to do.</p>
+  </div>
+  <p class="count">1 / 8</p>
+</section>
+
+<section class="slide b verse" id="b-verse">
+  <div class="stage"><img class="art" src="../../public/art/01.jpg" alt="" /></div>
+  <div class="copy">
+    <p class="kicker">Memory verse · Creation</p>
+    <p class="verse">Then God said, “Let us make man in our image, after our likeness.” So God created man in his own image, in the image of God he created him; male and female he created them.</p>
+    <p class="ref">Genesis 1:26–27</p>
+  </div>
+  <p class="count">2 / 8</p>
+</section>
+
+<section class="slide c" id="c-word">
+  <p class="kicker">Week 1 of 30 · God’s heart</p>
+  <div class="field"></div>
+  <img class="art" src="../../public/art/01.jpg" alt="" />
+  <div class="band">
+    <h1 class="word">Creation</h1>
+    <div class="rule"></div>
+    <p class="def">Creation is God making the whole world and everything in it. He made people in a special way so we could know, love, and reflect Him.</p>
+  </div>
+</section>
+
+<section class="slide c verse" id="c-verse">
+  <p class="kicker">Memory verse · 2 / 8</p>
+  <div class="field"></div>
+  <img class="art" src="../../public/art/01.jpg" alt="" />
+  <div class="verse-copy">
+    <p class="verse">Then God said, “Let us make man in our image, after our likeness.” So God created man in his own image, in the image of God he created him; male and female he created them.</p>
+    <p class="ref">Genesis 1:26–27</p>
+  </div>
+</section>
+
+</body>
+</html>
