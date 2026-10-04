@@ -1904,7 +1904,7 @@ function PraySlide({ week }) {
 	});
 }
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CZv1R4-Y.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Bm125koz.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var __defProp = Object.defineProperty;
 var __exportAll = (all, no_symbols) => {
@@ -2267,8 +2267,24 @@ var Route$7 = createRootRoute({
 		links: [
 			{
 				rel: "icon",
-				type: "image/svg+xml",
-				href: "/favicon.svg"
+				href: "/favicon.ico",
+				sizes: "32x32"
+			},
+			{
+				rel: "icon",
+				type: "image/png",
+				sizes: "32x32",
+				href: "/favicon-32.png"
+			},
+			{
+				rel: "icon",
+				type: "image/png",
+				sizes: "192x192",
+				href: "/icon-192.png"
+			},
+			{
+				rel: "apple-touch-icon",
+				href: "/apple-touch-icon.png"
 			},
 			{
 				rel: "stylesheet",
@@ -2277,10 +2293,6 @@ var Route$7 = createRootRoute({
 			{
 				rel: "manifest",
 				href: "/__grok/manifest.webmanifest"
-			},
-			{
-				rel: "apple-touch-icon",
-				href: "/__grok/icon-180.png"
 			}
 		]
 	}),
@@ -2302,9 +2314,9 @@ function Root() {
 		] })]
 	});
 }
-var $$splitComponentImporter$5 = () => import("./routes-DG1sxUe-.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-BrqRbhHJ.mjs");
 var Route$6 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
-var $$splitComponentImporter$4 = () => import("./print-DJMOuFU5.mjs");
+var $$splitComponentImporter$4 = () => import("./print-mycwTXfu.mjs");
 var Route$5 = createFileRoute("/print")({
 	validateSearch: (search) => {
 		const raw = Number(search.week);
@@ -2319,7 +2331,7 @@ var Route$4 = createFileRoute("/resources")({
 	head: () => ({ meta: [{ title: "Resources — The Visual Gospel Leader Guide" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("../_week-DLjf-v1d.mjs");
+var $$splitComponentImporter$2 = () => import("../_week-bIBmtVjE.mjs");
 var Route$3 = createFileRoute("/slide/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -2340,7 +2352,7 @@ var Route$2 = createFileRoute("/slides/")({ beforeLoad: () => {
 	});
 } });
 var $$splitNotFoundComponentImporter$1 = () => import("../_week-BXhqCJGk.mjs");
-var $$splitComponentImporter$1 = () => import("../_week-D9OoKXw6.mjs");
+var $$splitComponentImporter$1 = () => import("../_week-D_CSQE27.mjs");
 var Route$1 = createFileRoute("/slides/$week")({
 	validateSearch: (search) => {
 		if (search.s == null || search.s === "") return {};
@@ -2356,7 +2368,7 @@ var Route$1 = createFileRoute("/slides/$week")({
 	notFoundComponent: lazyRouteComponent($$splitNotFoundComponentImporter$1, "notFoundComponent")
 });
 var $$splitNotFoundComponentImporter = () => import("../_week-DTBknXsf.mjs");
-var $$splitComponentImporter = () => import("../_week-rtkldEA4.mjs");
+var $$splitComponentImporter = () => import("../_week-BuVKvIRa.mjs");
 var Route = createFileRoute("/week/$week")({
 	loader: ({ params }) => {
 		const week = weekByNumber(Number(params.week));

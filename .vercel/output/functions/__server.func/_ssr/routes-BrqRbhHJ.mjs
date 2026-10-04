@@ -1,8 +1,8 @@
 import { S as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Shell } from "./Shell-UQz4vjBr.mjs";
-import { d as PARTS, f as WEEKS, g as partOf, m as cn, o as meetingLabel, s as useGuide } from "./router-CZv1R4-Y.mjs";
+import { d as PARTS, f as WEEKS, g as partOf, m as cn, o as meetingLabel, s as useGuide } from "./router-Bm125koz.mjs";
 import { t as HowTo } from "./HowTo-GGZ_M1T2.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DG1sxUe-.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BrqRbhHJ.js
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {
 	const hydrated = useGuide((s) => s.hydrated);
