@@ -13,14 +13,14 @@ export const weeksA: Week[] = [
     ref: "Genesis 1:26–27",
     picture:
       "Two hands reach across empty space and do not quite meet. Nearness was the design. The gap is not the design.",
-    show: "Say: God made us to know Him and to worship Him. Nearness was His design, and we exist for His glory.",
+    show: "Say: God made the heavens and the earth in six days, as Genesis records. He made us in His image to know Him and to worship Him.",
     alt: "Pencil drawing of two hands reaching toward each other, nearly touching.",
     icebreaker:
       "What is something you made with your hands that you were glad to finish?",
-    iceAim: "Let them name something ordinary. Then open Psalm 8. The psalm is about the God who made the heavens and then made us. Do not debate the age of the earth. This is worship, not a science class.",
+    iceAim: "Let them name something ordinary. Then open Psalm 8. The psalm worships the God who made the heavens with His fingers. Genesis 1 tells how: He spoke, and it was so, in six days, and He made man in His image. Read it as history. Then worship.",
     passageRef: "Psalm 8:3–6",
     passageWhy:
-      "The memory verse is Genesis 1. Stay in Psalm 8. Ask what the text says before anyone talks about how big the sky makes them feel. Feelings are not the authority. But God gave us these words. Do not reteach the journal.",
+      "The memory verse is Genesis 1:26–27. That chapter is history. God created in six days by His word, and He made man male and female in His image. Stay in Psalm 8 for the questions. Ask what the text says before anyone talks about how big the sky makes them feel. Feelings are not the authority. But God gave us these words. Do not reteach the journal.",
     passage:
       "When I look at your heavens, the work of your fingers, the moon and the stars, which you have set in place, what is man that you are mindful of him, and the son of man that you care for him? Yet you have made him a little lower than the heavenly beings and crowned him with glory and honor. You have given him dominion over the works of your hands; you have put all things under his feet.",
     fromText: [
@@ -51,14 +51,14 @@ export const weeksA: Week[] = [
     ],
     say: "You were made by God and for God, and Jesus came to bring rebels back to Him.",
     mission: "Invite a neighbor to your table this week and learn their name. See them as someone God made on purpose. Say that God made them for Himself, and Jesus came so sinners could know Him.",
-    missionAim: "See them, share a table, and talk about the Maker. A meal that never names Jesus is not the whole challenge. If they want a fight about the age of the earth, do not take it. Tell them who made them and why.",
+    missionAim: "See them, share a table, and talk about the Maker. A meal that never names Jesus is not the whole challenge. Tell them God made them, as Genesis says, and Jesus came so sinners could know Him.",
     pray: [
       "Father, You made the heavens with Your fingers, and You made every person in this room. We worship You.",
       "Forgive us for living as if we were the center. You alone are worthy.",
       "Send us to one neighbor this week with a table and a true word about Jesus.",
     ],
     watch:
-      "Do not debate the age of the earth. If it comes up, say, 'God made all things, and that is enough for tonight,' and return to Psalm 8. Do not skip to the fall in the first five minutes. The Maker has to be clear before the bad news lands. Do not turn this into journaling about identity. The text speaks.",
+      "Read Genesis as it is written. In six days the Lord made heaven and earth, the sea, and all that is in them, and He rested on the seventh (Genesis 1; Exodus 20:11). He made man male and female in His image. Do not turn the days into a symbol. If someone wants to argue past the text, do not hand them the hour. Say what God said and return to Psalm 8. Do not skip to the fall in the first five minutes. The Maker has to be clear before the bad news lands. Do not turn this into journaling about identity. The text speaks.",
     youth:
       "Ask which is harder to believe: that they are small under the sky, or that God crowned them and cares. Then read verse 4 again. The answer is in the text, not in how they feel.",
     further:
